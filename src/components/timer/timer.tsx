@@ -29,7 +29,7 @@ const Timer = ({ shutOffTimer }: { shutOffTimer: any }) => {
   }, []);
   return (
     <>
-      <div className={styles.timer}>
+      <div className={styles.timerDesktop}>
         <div className={styles.circle} style={{ marginTop: 'calc(3.5 * 20px - 15px)' }}></div>
         <div className={styles.connection} style={{ marginTop: 'calc(3.5 * 20px)' }}></div>
         <div className={styles.timeWrap}>
@@ -53,6 +53,39 @@ const Timer = ({ shutOffTimer }: { shutOffTimer: any }) => {
         </div>
         <div className={styles.connection} style={{ marginTop: 'calc(1 * 20px)' }}></div>
         <div className={styles.circle} style={{ marginTop: 'calc(1 * 20px - 15px)' }}></div>
+      </div>
+      <div className={styles.timerMobile}>
+        <div className={styles.timerRow}>
+          <div className={styles.circle} style={{ marginTop: 'calc(3.5 * 20px - 5px)' }}></div>
+          <div className={styles.connection} style={{ marginTop: 'calc(3.5 * 20px)' }}></div>
+          <div className={styles.timeWrap}>
+            <p className={styles.time}>{days}</p>
+            <p>Days</p>
+          </div>
+          <div className={styles.connection} style={{ marginTop: 'calc(1.5 * 20px)' }}></div>
+          <div className={styles.timeWrap}>
+            <p className={styles.time}>{hours}</p>
+            <p>Hours</p>
+          </div>
+          <div className={styles.connection} style={{ marginTop: 'calc(3 * 20px)' }}></div>
+          <div className={styles.circle} style={{ marginTop: 'calc(3 * 20px - 5px)' }}></div>
+        </div>
+
+        <div className={styles.timerRow}>
+          <div className={styles.circle} style={{ marginTop: 'calc(3 * 20px - 5px)' }}></div>
+          <div className={styles.connection} style={{ marginTop: 'calc(3 * 20px)' }}></div>
+          <div className={styles.timeWrap}>
+            <p className={styles.time}>{minutes}</p>
+            <p>Minutes</p>
+          </div>
+          <div className={styles.connection} style={{ marginTop: 'calc(2 * 20px)' }}></div>
+          <div className={styles.timeWrap}>
+            <p className={styles.time}>{seconds}</p>
+            <p>Seconds</p>
+          </div>
+          <div className={styles.connection} style={{ marginTop: 'calc(1 * 20px)' }}></div>
+          <div className={styles.circle} style={{ marginTop: 'calc(1 * 20px - 5px)' }}></div>
+        </div>
       </div>
     </>
   );

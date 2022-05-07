@@ -1,13 +1,37 @@
 .timer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 50px;
     animation: woohoo 1s cubic-bezier(0.42, 0, 0.3, 1.63);
+}
+
+.timerDesktop {
+    @extend .timer;
+    display: none;
     @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         margin-top: 100px;
     }
+}
+
+.timerMobile {
+    @extend .timer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.timerRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
 }
 
 .timeWrap {
@@ -26,8 +50,8 @@ border-bottom-right-radius: 70% 60%;
 */
     background-color: var(--nt-blue);
     color: #fff;
-    width: 40px;
-    font-size: 10px;
+    width: 60px;
+    font-size: 15px;
     @media screen and (min-width: 768px) {
         width: 100px;
         padding: 5px;
@@ -49,7 +73,7 @@ border-bottom-right-radius: 70% 60%;
 
 .time {
     font-weight: 900;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 0;
@@ -72,11 +96,16 @@ border-bottom-right-radius: 70% 60%;
 
 .circle {
     border-radius: 50%;
-    border: var(--nt-blue) solid 10px;
-    width: 5px;
-    height: 5px;
+    border: var(--nt-blue) solid 5px;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     @media screen and (min-width: 768px) {
         width: 20px;
         height: 20px;
+        border: var(--nt-blue) solid 10px;
+        margin-right: 0;
+        margin-left: 0;
     }
 }
