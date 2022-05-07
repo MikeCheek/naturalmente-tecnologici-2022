@@ -1,7 +1,9 @@
 module.exports = {
+    pathPrefix: '/naturalmente-tecnologici',
     siteMetadata: {
         title: `Naturalmente Tecnologici`,
-        siteUrl: `https://www.yourdomain.tld`,
+        siteUrl: 'https://mike-cheek.github.io/naturalmente-tecnologici',
+        url: 'https://mike-cheek.github.io/naturalmente-tecnologici',
     },
     plugins: [
         'gatsby-plugin-sass',
