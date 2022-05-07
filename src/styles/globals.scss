@@ -1,14 +1,22 @@
 @import 'scrollbar';
 :root {
     --nt-blue: #014dfe;
-    --nt-transparent-blue: #014dfe91;
+    --nt-transparent-blue: #014dfe83;
+    --nt-green: #5ddb3a;
+    --nt-transparent-green: #5ddb3a83;
+    --nt-orange: #ff7000;
+    --nt-transparent-orange: #ff700083;
+    --nt-purple: #b400ff;
+    --nt-transparent-purple: #b400ff83;
+    --nt-black: #000000;
+    --nt-transparent-black: #00000083;
 }
 
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: linear-gradient(-45deg, #5ddb3a83, #ff700083, #b400ff83, #00000083);
+    background: linear-gradient( -45deg, var(--nt-transparent-green), var(--nt-transparent-orange), var(--nt-transparent-purple), var(--nt-transparent-black));
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
 }

@@ -9,10 +9,8 @@ const Timer = ({ shutOffTimer }: { shutOffTimer: any }) => {
 
   useEffect(() => {
     setInterval(() => {
-      const countDownDate = new Date('Sep 15, 2022 15:37:25').getTime();
-
-      console.log('timer');
       const now = new Date().getTime();
+      const countDownDate = new Date('Sep 15, 2022 15:37:25').getTime();
       const distance = countDownDate - now;
       const d = Math.floor(distance / (1000 * 60 * 60 * 24));
       const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
