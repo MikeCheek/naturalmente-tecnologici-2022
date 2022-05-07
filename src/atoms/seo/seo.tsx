@@ -8,7 +8,7 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: SEOProps): JSX
 
   const metaDescription: string = description; //|| site.siteMetadata.description
   //const defaultTitle = site.siteMetadata?.title
-  const defaultTitle: string = 'Portfolio';
+  const defaultTitle: string = 'Syscrack';
   return (
     <Helmet
       htmlAttributes={{

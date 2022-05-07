@@ -2,6 +2,7 @@ import * as React from 'react';
 import Logo from '../atoms/logo/logo';
 import { Link } from 'gatsby';
 import '../styles/globals.scss';
+import SEO from '../atoms/seo/seo';
 
 const NotFoundPage = () => {
   const pageStyle: React.CSSProperties = {
@@ -15,7 +16,7 @@ const NotFoundPage = () => {
   };
   return (
     <main style={pageStyle}>
-      <title>NT | Not found</title>
+      <SEO title="404: Not found" />
       <Logo />
       <h1>Page not found</h1>
       <p>

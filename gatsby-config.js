@@ -16,6 +16,8 @@ module.exports = {
                 name: 'Naturalmente Tecnologici',
                 short_name: 'NT',
                 lang: 'it',
+                background_color: '#014dfe55',
+                theme_color: '#014dfe55',
                 // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
                 // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
                 display: 'standalone',
