@@ -10,16 +10,21 @@
     --nt-transparent-purple: #b400ff83;
     --nt-black: #000000;
     --nt-transparent-black: #00000083;
+    --light-blue: #bdd0fb;
 }
 
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
+    background-color: var(--nt-transparent-blue);
+    color: var(--light-blue);
+    /*
     background: linear-gradient( -45deg, var(--nt-transparent-green), var(--nt-transparent-orange), var(--nt-transparent-purple), var(--nt-transparent-black));
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
+    */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 

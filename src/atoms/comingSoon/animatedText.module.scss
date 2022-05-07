@@ -1,12 +1,11 @@
 .coming {
     font-size: 32px;
     font-weight: 900;
-    background: linear-gradient(-45deg, #5ddb3a, #ff7000, #b400ff, #000000);
+    background: linear-gradient(-45deg, var(--nt-green), var(--nt-orange), var(--nt-purple), var(--nt-black));
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     padding: 5px 30px 5px;
     border-radius: 20px;
-    color: white;
     margin-bottom: 50px;
     margin-top: 50px;
     /*
