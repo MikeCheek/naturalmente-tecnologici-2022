@@ -5,7 +5,7 @@
     --nt-green: #5ddb3a;
     --nt-transparent-green: #5ddb3a83;
     --nt-orange: #ff7000;
-    --nt-transparent-orange: #ff700083;
+    --nt-transparent-orange: #ff8e37;
     --nt-purple: #b400ff;
     --nt-transparent-purple: #b400ff83;
     --nt-black: #000000;
@@ -16,7 +16,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: linear-gradient( -45deg, var(--nt-transparent-green), var(--nt-transparent-orange), var(--nt-transparent-purple), var(--nt-transparent-black));
+    background-color: var(--nt-transparent-orange);
+    //background: linear-gradient( -45deg, var(--nt-transparent-green), var(--nt-transparent-orange), var(--nt-transparent-purple), var(--nt-transparent-black));
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
 }
