@@ -4,12 +4,10 @@ import randInt from '../../utility/randInt';
 import * as styles from './bug.module.scss';
 
 interface BugProps {
-  right?: boolean;
-  bottom?: boolean;
   time?: number;
 }
 
-const Bug = ({ right = false, bottom = false, time = 5000 }: BugProps) => {
+const Bug = ({ time = 5000 }: { time?: number }) => {
   const bugRef = useRef<HTMLDivElement>(null);
 
   const moveBugs = () => {
@@ -35,8 +33,8 @@ const Bug = ({ right = false, bottom = false, time = 5000 }: BugProps) => {
   }, []);
 
   const style = {
-    left: right ? '100%' : '-100px',
-    top: bottom ? '100%' : '180px',
+    left: 'calc(50% - 50px)',
+    top: '15%',
   };
   return (
     <>

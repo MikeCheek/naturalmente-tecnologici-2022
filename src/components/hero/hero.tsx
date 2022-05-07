@@ -13,9 +13,9 @@ const Hero = () => {
       {timer ? <Timer shutOffTimer={() => setTimer(false)} /> : null}
       <AnimatedText text={'COMING SOON'} />
       <Bug time={6500} />
-      <Bug time={5050} bottom />
-      <Bug time={4500} right />
-      <Bug time={7050} right bottom />
+      <Bug time={5050} />
+      <Bug time={4500} />
+      <Bug time={7050} />
     </div>
   );
 };
