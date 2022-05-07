@@ -35,8 +35,8 @@ const Bug = ({ right = false, bottom = false, time = 5000 }: BugProps) => {
   }, []);
 
   const style = {
-    left: right && typeof window !== 'undefined' ? window.innerWidth : '-100px',
-    top: bottom && typeof window !== 'undefined' ? window.innerHeight : '180px',
+    left: right ? '100%' : '-100px',
+    top: bottom ? '100%' : '180px',
   };
   return (
     <>
