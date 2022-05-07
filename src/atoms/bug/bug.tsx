@@ -41,12 +41,7 @@ const Bug = ({ right = false, bottom = false, time = 5000 }: BugProps) => {
   return (
     <>
       <div className={styles.bugWrap} ref={bugRef} style={style}>
-        <StaticImage
-          src="https://syskrack.org/wp-content/uploads/2022/05/bug.png"
-          alt="bug"
-          placeholder="blurred"
-          className={styles.bug}
-        />
+        <StaticImage src="../../images/bug.png" alt="bug" placeholder="blurred" className={styles.bug} />
       </div>
     </>
   );
