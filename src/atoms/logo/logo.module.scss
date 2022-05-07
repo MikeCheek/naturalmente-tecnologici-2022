@@ -1,7 +1,22 @@
 .logo {
-    width: 70%;
+    width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+
+.logoWrap {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border-radius: 10px;
+    width: 80%;
     margin-top: 50px;
+    height: auto;
+    position: sticky;
+    top: 0;
+    padding: 10px;
     @media screen and (min-width: 768px) {
         width: 40%;
     }
