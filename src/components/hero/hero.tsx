@@ -11,7 +11,7 @@ const Hero = () => {
     <div className={styles.nt}>
       <StaticImage
         src="../../images/logo.png"
-        alt="Naturalmente Tecnologici logo"
+        alt="Naturalmente Tecnologici Logo"
         placeholder="blurred"
         className={styles.logo}
       />
