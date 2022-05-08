@@ -3,10 +3,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import randInt from '../../utility/randInt';
 import * as styles from './bug.module.scss';
 
-interface BugProps {
-  time?: number;
-}
-
 const Bug = ({ time = 5000 }: { time?: number }) => {
   const bugRef = useRef<HTMLDivElement>(null);
 
@@ -32,16 +28,15 @@ const Bug = ({ time = 5000 }: { time?: number }) => {
     setInterval(moveBugs, time);
   }, []);
 
-  const style = {
-    left: 'calc(50% - 50px)',
-    top: '15%',
-  };
   return (
-    <>
-      <div className={styles.bugWrap} ref={bugRef} style={style}>
+    <span ref={bugRef}>
+      <div className={styles.bugWrapDesktop} style={{ left: '500px', top: '100px' }}>
         <StaticImage src="../../images/bug.png" alt="bug" placeholder="blurred" className={styles.bug} />
       </div>
-    </>
+      <div className={styles.bugWrapMobile} style={{ left: '150px', top: '100px' }}>
+        <StaticImage src="../../images/bug.png" alt="bug" placeholder="blurred" className={styles.bug} />
+      </div>
+    </span>
   );
 };
 
