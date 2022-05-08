@@ -9,7 +9,7 @@ interface BugProps {
   top?: number;
 }
 
-const Bug = ({ time = 5000, top = 100, left = -100 }: BugProps) => {
+const Bug = ({ time = 5000, top = 100, left = -105 }: BugProps) => {
   const bugRef = useRef<HTMLDivElement>(null);
 
   const moveBugs = () => {
