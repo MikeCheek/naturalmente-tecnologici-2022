@@ -1,9 +1,15 @@
-import { StaticImage } from 'gatsby-plugin-image';
-import React, { useEffect, useRef, useState } from 'react';
-import randInt from '../../utility/randInt';
+import React, { useEffect, useRef } from 'react';
 import * as styles from './bug.module.scss';
+import { StaticImage } from 'gatsby-plugin-image';
+import randInt from '../../utility/randInt';
 
-const Bug = ({ time = 5000 }: { time?: number }) => {
+interface BugProps {
+  time?: number;
+  left?: number;
+  top?: number;
+}
+
+const Bug = ({ time = 5000, top = 100, left = -100 }: BugProps) => {
   const bugRef = useRef<HTMLDivElement>(null);
 
   const moveBugs = () => {
@@ -28,15 +34,15 @@ const Bug = ({ time = 5000 }: { time?: number }) => {
     setInterval(moveBugs, time);
   }, []);
 
+  const style: React.CSSProperties = {
+    left: `${left}px`,
+    top: `${top}px`,
+  };
+
   return (
-    <span className={styles.container} ref={bugRef}>
-      <div className={styles.bugWrapDesktop} style={{ left: '500px', top: '100px' }}>
-        <StaticImage src="../../images/bug.png" alt="bug" placeholder="blurred" className={styles.bug} />
-      </div>
-      <div className={styles.bugWrapMobile} style={{ left: '150px', top: '100px' }}>
-        <StaticImage src="../../images/bug.png" alt="bug" placeholder="blurred" className={styles.bug} />
-      </div>
-    </span>
+    <div className={styles.bugWrap} ref={bugRef} style={style}>
+      <StaticImage src="../../images/bug.png" alt="bug" placeholder="blurred" className={styles.bug} />
+    </div>
   );
 };
 
