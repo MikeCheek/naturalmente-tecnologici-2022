@@ -38,7 +38,10 @@ const Logo = () => {
       <StaticImage
         src="../../images/logo.png"
         alt="Naturalmente Tecnologici Logo"
-        placeholder="blurred"
+        placeholder="tracedSVG"
+        tracedSVGOptions={{
+          color: 'green',
+        }}
         className={styles.logo}
       />
     </div>
