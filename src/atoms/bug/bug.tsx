@@ -29,7 +29,7 @@ const Bug = ({ time = 5000 }: { time?: number }) => {
   }, []);
 
   return (
-    <span ref={bugRef}>
+    <span className={styles.container} ref={bugRef}>
       <div className={styles.bugWrapDesktop} style={{ left: '500px', top: '100px' }}>
         <StaticImage src="../../images/bug.png" alt="bug" placeholder="blurred" className={styles.bug} />
       </div>
