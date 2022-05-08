@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div className={styles.nt}>
       <Logo />
-      {timer ? <Timer shutOffTimer={() => setTimer(false)} /> : null}
+      {timer ? <Timer shutOffTimer={() => setTimer(false)} /> : <></>}
       <AnimatedText text={'COMING SOON'} />
       <Bug time={6500} top={-100} />
       <Bug time={5050} left={150} top={-100} />
