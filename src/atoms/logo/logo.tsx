@@ -1,6 +1,6 @@
-import { StaticImage } from 'gatsby-plugin-image';
 import React, { useRef } from 'react';
 import * as styles from './logo.module.scss';
+import LogoSvg from '../../assets/logo.svg';
 
 const Logo = () => {
   const logoRef = useRef<HTMLDivElement>(null);
@@ -35,15 +35,7 @@ const Logo = () => {
       onMouseOut={removeListener}
       onTouchStart={() => {}}
     >
-      <StaticImage
-        src="../../images/logo.png"
-        alt="Naturalmente Tecnologici Logo"
-        placeholder="tracedSVG"
-        tracedSVGOptions={{
-          color: 'green',
-        }}
-        className={styles.logo}
-      />
+      <LogoSvg className={styles.logo} fill="var(--nt-green)" />
     </div>
   );
 };

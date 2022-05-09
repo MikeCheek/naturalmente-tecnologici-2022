@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import * as styles from './bug.module.scss';
-import { StaticImage } from 'gatsby-plugin-image';
 import randInt from '../../utility/randInt';
+import BugSvg from '../../assets/bug.svg';
 
 interface BugProps {
   time?: number;
@@ -41,7 +41,7 @@ const Bug = ({ time = 5000, top = 100, left = -105 }: BugProps) => {
 
   return (
     <div className={styles.bugWrap} ref={bugRef} style={style}>
-      <StaticImage src="../../images/bug.png" alt="bug" placeholder="blurred" className={styles.bug} />
+      <BugSvg alt="bug" className={styles.bug} fill="var(--nt-purple)" />
     </div>
   );
 };

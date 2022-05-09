@@ -11,6 +11,7 @@
     --nt-black: #000000;
     --nt-transparent-black: #00000083;
     --light-blue: #bdd0fb;
+    --nt-white: #ffffff;
 }
 
 body {
@@ -18,8 +19,8 @@ body {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
-    background-color: var(--nt-transparent-blue);
-    color: var(--light-blue);
+    background-color: var(--nt-white);
+    color: var(--nt-green);
     /*
     background: linear-gradient( -45deg, var(--nt-transparent-green), var(--nt-transparent-orange), var(--nt-transparent-purple), var(--nt-transparent-black));
     background-size: 400% 400%;
