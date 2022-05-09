@@ -1,9 +1,9 @@
 module.exports = {
-    pathPrefix: '/naturalmente-tecnologici-landing',
+    pathPrefix: '/nt',
     siteMetadata: {
         title: `Naturalmente Tecnologici`,
-        siteUrl: 'http://syskrack.org/natrualmente-tecnologici-landing',
-        url: 'http://syskrack.org/natrualmente-tecnologici-landing',
+        siteUrl: 'http://syskrack.org/nt',
+        url: 'http://syskrack.org/nt',
     },
     plugins: [
         'gatsby-plugin-sass',
