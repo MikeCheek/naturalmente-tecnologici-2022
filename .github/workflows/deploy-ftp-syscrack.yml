@@ -25,7 +25,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: syscrack.org
+          server: www.syscrack.org
           username: michele@syskrack.org
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./public/
