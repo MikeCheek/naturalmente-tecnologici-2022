@@ -3,6 +3,7 @@ import Logo from '../atoms/logo/logo';
 import { Link } from 'gatsby';
 import '../styles/globals.scss';
 import SEO from '../atoms/seo/seo';
+import Greenwood from '../components/greenwood/greenwood';
 
 const NotFoundPage = () => {
   const pageStyle: React.CSSProperties = {
@@ -21,6 +22,7 @@ const NotFoundPage = () => {
       <p>
         <Link to="/">Go home</Link>
       </p>
+      <Greenwood />
     </main>
   );
 };
