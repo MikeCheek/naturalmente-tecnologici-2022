@@ -11,7 +11,6 @@ const NotFoundPage = () => {
     alignItems: 'center',
     justifyContent: 'center',
     width: '100%',
-    color: 'var(--nt-blue)',
     fontSize: '1.5rem',
   };
   return (
