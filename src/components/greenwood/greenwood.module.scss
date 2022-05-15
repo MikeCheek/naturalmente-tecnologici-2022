@@ -1,0 +1,14 @@
+.greenwood {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: -5;
+    svg {
+        position: fixed;
+        height: 150px;
+        @media screen and (min-width: 768px) {
+            height: 200px;
+        }
+    }
+}

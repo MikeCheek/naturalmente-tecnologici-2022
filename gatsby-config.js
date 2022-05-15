@@ -2,8 +2,8 @@ module.exports = {
     pathPrefix: '/',
     siteMetadata: {
         title: `Naturalmente Tecnologici`,
-        siteUrl: 'http://naturalmente-tecnologici.syskrack.org',
-        url: 'http://naturalmente-tecnologici.syskrack.org',
+        siteUrl: 'http://nt.syskrack.org',
+        url: 'http://nt.syskrack.org',
     },
     plugins: [
         'gatsby-plugin-sass',
@@ -30,6 +30,7 @@ module.exports = {
         },
         'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
+        'gatsby-plugin-optimize-svgs',
         {
             resolve: 'gatsby-source-filesystem',
             options: {

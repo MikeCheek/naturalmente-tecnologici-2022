@@ -1,6 +1,7 @@
 $bg-color: var(--nt-green);
 .timer {
     margin-top: 50px;
+    z-index: 2;
     /*animation: woohoo 1s cubic-bezier(0.42, 0, 0.3, 1.63);*/
 }
 
