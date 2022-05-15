@@ -11,7 +11,6 @@ const IndexPage = () => {
 
   const handleClick = () => {
     setCrushed(crushed + 1);
-    console.log(crushed);
   };
 
   return (
