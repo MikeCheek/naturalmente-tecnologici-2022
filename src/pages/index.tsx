@@ -8,7 +8,6 @@ import '../styles/globals.scss';
 
 const IndexPage = () => {
   const [crushed, setCrushed] = useState<number>(0);
-
   const handleClick = () => {
     setCrushed(crushed + 1);
   };
