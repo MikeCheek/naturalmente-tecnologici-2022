@@ -17,12 +17,12 @@ const NotFoundPage = () => {
   return (
     <main style={pageStyle}>
       <SEO title="404: Not found" />
+      <Greenwood />
       <Logo />
       <h1>Page not found</h1>
       <p>
         <Link to="/">Go home</Link>
       </p>
-      <Greenwood />
     </main>
   );
 };
