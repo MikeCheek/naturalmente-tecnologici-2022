@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import randInt from '../../utility/randInt';
 import * as styles from './timer.module.scss';
 
 const Timer = ({ shutOffTimer }: { shutOffTimer: any }) => {
@@ -10,7 +11,18 @@ const Timer = ({ shutOffTimer }: { shutOffTimer: any }) => {
   const countDownDate = new Date('August 11, 2022 09:00:00').getTime();
 
   useEffect(() => {
-    setInterval(() => {
+    const interval = setInterval(() => {
+      setDays(Math.floor(randInt(0, 99)));
+      setHours(Math.floor(randInt(0, 23)));
+      setMinutes(Math.floor(randInt(0, 59)));
+      setSeconds(Math.floor(randInt(0, 59)));
+    }, 50);
+
+    setTimeout(() => {
+      clearInterval(interval);
+    }, 1000);
+
+    const timeRemaining = setInterval(() => {
       const now = new Date().getTime();
       const distance = countDownDate - now;
       const d = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -23,6 +35,7 @@ const Timer = ({ shutOffTimer }: { shutOffTimer: any }) => {
       seconds != s ? setSeconds(s) : null;
       if (distance < 0) {
         shutOffTimer();
+        clearInterval(timeRemaining);
       }
     }, 1000);
 
