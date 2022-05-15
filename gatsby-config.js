@@ -48,5 +48,22 @@ module.exports = {
                 path: './src/assets/',
             },
         },
+        {
+            resolve: 'gatsby-plugin-htaccess',
+            options: {
+                RewriteBase: '/',
+                https: true,
+                SymLinksIfOwnerMatch: true,
+                host: 'nt.syskrack.org', // if 'www' is set to 'false', be sure to also remove it here!
+                ErrorDocument: `
+                ErrorDocument 404 /404.html
+              `,
+
+                custom: `
+                  # This is a custom rule!
+                  # This is a another custom rule!
+              `,
+            },
+        },
     ],
 };
