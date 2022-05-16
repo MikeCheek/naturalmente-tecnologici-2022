@@ -3,16 +3,12 @@
     background: linear-gradient(-45deg, var(--nt-green), var(--nt-orange), var(--nt-purple), var(--nt-black));
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
-    border-radius: 20px;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
     &a {
         text-decoration: none;
-    }
-    @media screen and (min-width: 768px) {
-        border-radius: 30px;
     }
 }
 
