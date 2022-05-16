@@ -33,10 +33,14 @@ $bg-color: var(--nt-green);
     flex-direction: row;
     width: 100%;
     justify-content: center;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 }
 
 .timeWrap {
-    margin: 0 0 30px;
+    margin: 0;
     padding: 10px;
     display: flex;
     align-items: center;
