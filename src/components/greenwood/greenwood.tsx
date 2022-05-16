@@ -1,12 +1,9 @@
 import React from 'react';
-import * as styles from './greenwood.module.scss';
-
-import BigBranch from '../../assets/bigBranch.svg';
 import Branch1 from '../../assets/branch1.svg';
 import Branch2 from '../../assets/branch2.svg';
 import Flower1 from '../../assets/flower1.svg';
 import Flower2 from '../../assets/flower2.svg';
-import Insect from '../../assets/insect.svg';
+import * as styles from './greenwood.module.scss';
 
 const Greenwood = () => {
   return (
