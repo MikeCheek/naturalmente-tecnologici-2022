@@ -11,15 +11,21 @@ const IndexPage = () => {
     setCrushed(crushed + 1);
   };
 
+  const crushedStyle = {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    margin: 'auto',
+    width: '5px',
+    padding: '5px',
+  } as React.CSSProperties;
+
   return (
     <>
       <SEO title="Naturalmente Tecnologici" description="Naturalmente Tecnologici | Syskrack - Grassano (MT)" />
       <Layout>
-        {crushed > 0 ? (
-          <p style={{ position: 'absolute', left: 0, right: 0, margin: 'auto', width: '5px', padding: '5px' }}>
-            {crushed}
-          </p>
-        ) : null}
+        {crushed > 0 ? <p style={crushedStyle}>{crushed}</p> : null}
         <Hero />
         <Bugs handleClick={handleClick} />
       </Layout>
