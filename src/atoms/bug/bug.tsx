@@ -60,7 +60,7 @@ const Bug = ({ time = 5000, top = 100, left = -105, click }: BugProps) => {
 
   return (
     <div className={styles.bugWrap} ref={bugRef} style={style}>
-      <BugSvg alt="bug" className={styles.bug} fill="var(--nt-purple)" onClick={handleClick} />
+      <BugSvg alt="bug" className={styles.bug} fill="var(--svg-back)" onClick={handleClick} />
     </div>
   );
 };

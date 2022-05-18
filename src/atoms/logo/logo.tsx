@@ -36,12 +36,12 @@ const Logo = () => {
         className={styles.logoMegaWrap}
       >
         <div ref={logoRef} className={styles.logoWrap}>
-          <LogoSvg className={styles.logo} fill="var(--nt-green)" />
+          <LogoSvg alt="Naturalmente Tecnologici logo" className={styles.logo} fill="var(--svg-front)" />
         </div>
       </div>
       <div className={styles.logoMegaWrap4K}>
         <div className={styles.logoWrap}>
-          <LogoSvg className={styles.logo} fill="var(--nt-green)" />
+          <LogoSvg alt="Naturalmente Tecnologici logo" className={styles.logo} fill="var(--svg-front)" />
         </div>
       </div>
     </>

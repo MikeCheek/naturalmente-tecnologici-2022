@@ -12,6 +12,9 @@
     --nt-transparent-black: #00000083;
     --light-blue: #bdd0fb;
     --nt-white: #ffffff;
+    --nt-grey: #484848;
+    --svg-front: var(--nt-blue);
+    --svg-back: var(--nt-grey);
 }
 
 body {
@@ -20,7 +23,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     background-color: var(--nt-white);
-    color: var(--nt-green);
+    color: var(--svg-front);
     /*
     background: linear-gradient( -45deg, var(--nt-transparent-green), var(--nt-transparent-orange), var(--nt-transparent-purple), var(--nt-transparent-black));
     background-size: 400% 400%;
