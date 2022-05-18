@@ -23,7 +23,10 @@ const IndexPage = () => {
 
   return (
     <>
-      <SEO title="Naturalmente Tecnologici" description="Naturalmente Tecnologici | Syskrack - Grassano (MT)" />
+      <SEO
+        title="Naturalmente Tecnologici"
+        description="Naturalmente Tecnologici è un evento organizzato da Syskrack a Grassano (MT)"
+      />
       <Layout>
         {crushed > 0 ? <p style={crushedStyle}>{crushed}</p> : null}
         <Hero />
