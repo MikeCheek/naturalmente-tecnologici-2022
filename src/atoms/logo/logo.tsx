@@ -27,16 +27,24 @@ const Logo = () => {
   };
 
   return (
-    <div
-      ref={logoRef}
-      className={styles.logoWrap}
-      onMouseLeave={removeListener}
-      onMouseOver={addListener}
-      onMouseOut={removeListener}
-      onTouchStart={() => {}}
-    >
-      <LogoSvg className={styles.logo} fill="var(--nt-green)" />
-    </div>
+    <>
+      <div
+        onMouseLeave={removeListener}
+        onMouseOver={addListener}
+        onMouseOut={removeListener}
+        onTouchStart={() => {}}
+        className={styles.logoMegaWrap}
+      >
+        <div ref={logoRef} className={styles.logoWrap}>
+          <LogoSvg className={styles.logo} fill="var(--nt-green)" />
+        </div>
+      </div>
+      <div className={styles.logoMegaWrap4K}>
+        <div className={styles.logoWrap}>
+          <LogoSvg className={styles.logo} fill="var(--nt-green)" />
+        </div>
+      </div>
+    </>
   );
 };
 
