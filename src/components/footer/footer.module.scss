@@ -3,11 +3,16 @@
     margin-top: 200px;
     margin-bottom: 50px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     @media screen and (min-width: 768px) {
         margin-top: 300px;
+    }
+    p {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 }
