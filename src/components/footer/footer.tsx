@@ -6,11 +6,16 @@ import * as styles from './footer.module.scss';
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <Syskrack />
       <p>
-        Created with love by{' '}
+        Developed by{' '}
         <AnimatedText>
           <a href="https://mikecheek.github.io/portfolio/">Michele Pulvirenti</a>
+        </AnimatedText>
+      </p>
+      <p>
+        Designed by{' '}
+        <AnimatedText>
+          <a href="https://www.instagram.com/raffaellacip/">Raffaella Cipolla</a>
         </AnimatedText>
       </p>
     </div>

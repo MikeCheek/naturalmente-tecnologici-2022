@@ -76,7 +76,7 @@ const Timer = ({ shutOffTimer }: { shutOffTimer: any }) => {
             <p className={styles.time}>{days}</p>
             <p>Days</p>
           </div>
-          <div className={styles.connection} style={{ marginTop: 'calc(1.5 * 20px)' }}></div>
+          <div className={styles.connection} style={{ marginTop: 'calc(1.5 * 20px)', width: '40px' }}></div>
           <div className={styles.timeWrap}>
             <p className={styles.time}>{hours}</p>
             <p>Hours</p>
@@ -92,7 +92,7 @@ const Timer = ({ shutOffTimer }: { shutOffTimer: any }) => {
             <p className={styles.time}>{minutes}</p>
             <p>Minutes</p>
           </div>
-          <div className={styles.connection} style={{ marginTop: 'calc(2 * 20px)' }}></div>
+          <div className={styles.connection} style={{ marginTop: 'calc(2 * 20px)', width: '40px' }}></div>
           <div className={styles.timeWrap}>
             <p className={styles.time}>{seconds}</p>
             <p>Seconds</p>

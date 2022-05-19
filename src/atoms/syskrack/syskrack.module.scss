@@ -2,3 +2,18 @@
     margin: 10px;
     height: auto;
 }
+
+.syskrackMobile {
+    @extend .syskrack;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.syskrackDesktop {
+    @extend .syskrack;
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}

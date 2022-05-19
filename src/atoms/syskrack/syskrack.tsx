@@ -6,11 +6,18 @@ const Syskrack = () => {
   return (
     <a href="https://syskrack.org" target="_blank" rel="noopener noreferrer" className={styles.syskrack}>
       <StaticImage
-        src="../../images/compactSyskrack.jpg"
+        src="../../images/compactSyskrack.png"
         alt="Logo Syskrack"
         placeholder="tracedSVG"
-        className={styles.syskrack}
-        width={100}
+        className={styles.syskrackMobile}
+        width={60}
+      />
+      <StaticImage
+        src="../../images/compactSyskrack.png"
+        alt="Logo Syskrack"
+        placeholder="tracedSVG"
+        className={styles.syskrackDesktop}
+        width={90}
       />
     </a>
   );

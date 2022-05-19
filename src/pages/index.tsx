@@ -28,7 +28,7 @@ const IndexPage = () => {
         description="Naturalmente Tecnologici è un evento organizzato da Syskrack a Grassano (MT)"
       />
       <Layout>
-        {crushed > 0 ? <p style={crushedStyle}>{crushed}</p> : null}
+        {/*crushed > 0 ? <p style={crushedStyle}>{crushed}</p> : null*/}
         <Hero />
         <Bugs handleClick={handleClick} />
       </Layout>
