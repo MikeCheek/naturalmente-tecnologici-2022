@@ -4,22 +4,26 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const Syskrack = () => {
   return (
-    <a href="https://syskrack.org" target="_blank" rel="noopener noreferrer" className={styles.syskrack}>
-      <StaticImage
-        src="../../images/compactSyskrack.png"
-        alt="Logo Syskrack"
-        placeholder="tracedSVG"
-        className={styles.syskrackMobile}
-        width={60}
-      />
-      <StaticImage
-        src="../../images/compactSyskrack.png"
-        alt="Logo Syskrack"
-        placeholder="tracedSVG"
-        className={styles.syskrackDesktop}
-        width={90}
-      />
-    </a>
+    <>
+      <a href="https://syskrack.org" target="_blank" rel="noopener noreferrer" className={styles.syskrackMobile}>
+        <StaticImage
+          src="../../images/compactSyskrack.png"
+          alt="Logo Syskrack"
+          placeholder="tracedSVG"
+          className={styles.syskrack}
+          width={60}
+        />
+      </a>
+      <a href="https://syskrack.org" target="_blank" rel="noopener noreferrer" className={styles.syskrackDesktop}>
+        <StaticImage
+          src="../../images/compactSyskrack.png"
+          alt="Logo Syskrack"
+          placeholder="tracedSVG"
+          className={styles.syskrack}
+          width={90}
+        />
+      </a>
+    </>
   );
 };
 
