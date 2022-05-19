@@ -12,8 +12,14 @@ const Greenwood = () => {
       <Branch1 fill="var(--svg-front)" style={{ right: '0%', top: '30%', transform: 'rotate(-90deg)' }} />
       <Branch2 fill="var(--svg-front)" style={{ left: '0%', top: '30%', transform: 'rotate(90deg)' }} />
       <Branch2 fill="var(--svg-front)" style={{ right: '0%', transform: 'rotate(-90deg)' }} />
-      <Flower1 fill="var(--svg-front)" style={{ bottom: '0%', left: '0%', transform: 'rotate(45deg)' }} />
-      <Flower2 fill="var(--svg-front)" style={{ bottom: '0%', right: '0%', transform: 'rotate(-45deg)' }} />
+      <Flower1
+        fill="var(--svg-front)"
+        style={{ bottom: '0%', left: '-1%', transform: 'rotate(45deg)', width: 'auto' }}
+      />
+      <Flower2
+        fill="var(--svg-front)"
+        style={{ bottom: '0%', right: '0%', transform: 'rotate(-45deg)', width: 'auto' }}
+      />
     </div>
   );
 };
