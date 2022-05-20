@@ -9,13 +9,17 @@ const Footer = () => {
       <p>
         Developed by{' '}
         <AnimatedText>
-          <a href="https://bit.ly/mikecheek">Michele Pulvirenti</a>
+          <a href="https://bit.ly/mikecheek" target={'_blank'}>
+            Michele Pulvirenti
+          </a>
         </AnimatedText>
       </p>
       <p>
         Designed by{' '}
         <AnimatedText>
-          <a href="https://www.instagram.com/raffaellacip/">Raffaella Cipolla</a>
+          <a href="https://www.instagram.com/raffaellacip/" target={'_blank'}>
+            Raffaella Cipolla
+          </a>
         </AnimatedText>
       </p>
     </div>
