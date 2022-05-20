@@ -9,7 +9,7 @@ const Footer = () => {
       <p>
         Developed by{' '}
         <AnimatedText>
-          <a href="https://mikecheek.github.io/portfolio/">Michele Pulvirenti</a>
+          <a href="https://bit.ly/mikecheek">Michele Pulvirenti</a>
         </AnimatedText>
       </p>
       <p>
