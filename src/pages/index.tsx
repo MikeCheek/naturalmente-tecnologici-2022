@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SEO from '../atoms/seo/seo';
 import Bugs from '../components/bugs/bugs';
 import Hero from '../components/hero/hero';
@@ -10,6 +10,16 @@ const IndexPage = () => {
   const handleClick = () => {
     setCrushed(crushed + 1);
   };
+
+  useEffect(() => {
+    console.log(
+      'Hey questo sito si sta riempiendo di insetti! Aiutami a schiacciarli e ti dirò quanti ne hai presi <3'
+    );
+  }, []);
+
+  useEffect(() => {
+    crushed > 0 ? console.log(crushed) : null;
+  }, [crushed]);
 
   const crushedStyle = {
     position: 'absolute',
