@@ -9,6 +9,7 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: SEOProps): JSX
   const metaDescription: string = description; //|| site.siteMetadata.description
   //const defaultTitle = site.siteMetadata?.title
   const defaultTitle: string = 'Syskrack';
+  const image = 'src/assets/logo.svg';
   return (
     <Helmet
       htmlAttributes={{
@@ -23,6 +24,18 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: SEOProps): JSX
         },
         {
           property: `og:title`,
+          content: title,
+        },
+        {
+          property: `og:image`,
+          content: image,
+        },
+        {
+          property: `og:url`,
+          content: `https://nt.syskrack.org`,
+        },
+        {
+          property: `og:site_name`,
           content: title,
         },
         {
@@ -50,6 +63,10 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: SEOProps): JSX
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          property: `twitter:image`,
+          content: image,
         },
       ].concat(meta)}
     />
