@@ -13,7 +13,9 @@ const IndexPage = () => {
 
   useEffect(() => {
     console.log(
-      'Hey questo sito si sta riempiendo di insetti! Aiutami a schiacciarli e ti dirò quanti ne hai presi <3'
+      `%c Hey questo sito si sta riempiendo di insetti!
+Aiutami a schiacciarli e ti dirò quanti ne hai presi <3`,
+      'background: #014dfe; padding:5px;'
     );
   }, []);
 
