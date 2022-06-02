@@ -30,6 +30,7 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
+      sitemap: `${siteMetadata.siteUrl}/sitemap/sitemap-index.xml`,
       policy: [{ userAgent: '*', allow: '/' }],
     },
     'gatsby-plugin-sharp',
