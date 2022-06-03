@@ -16,7 +16,7 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: SEOProps): JSX
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : undefined}
+      titleTemplate={defaultTitle ? `%s - ${defaultTitle}` : undefined}
       meta={[
         {
           name: `description`,
