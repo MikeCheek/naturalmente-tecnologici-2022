@@ -23,16 +23,6 @@ Aiutami a schiacciarli e ti dirò quanti ne hai presi <3`,
     crushed > 0 ? console.log(crushed) : null;
   }, [crushed]);
 
-  const crushedStyle = {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    top: 0,
-    margin: 'auto',
-    width: '5px',
-    padding: '5px',
-  } as React.CSSProperties;
-
   return (
     <>
       <SEO
@@ -40,7 +30,6 @@ Aiutami a schiacciarli e ti dirò quanti ne hai presi <3`,
         description="L’evento si propone di essere occasione di ritrovo della community di Syskrack nonché strumento di disseminazione culturale sul territorio."
       />
       <Layout>
-        {/*crushed > 0 ? <p style={crushedStyle}>{crushed}</p> : null*/}
         <Hero />
         <Bugs handleClick={handleClick} />
       </Layout>

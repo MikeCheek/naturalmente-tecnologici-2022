@@ -1,0 +1,8 @@
+.pBase {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    @media screen and (min-width: 768px) {
+        font-size: 1.2rem;
+    }
+}

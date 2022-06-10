@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Circle from '../../atoms/circle/circle';
+import Connection from '../../atoms/connection/connection';
 import randInt from '../../utility/randInt';
 import * as styles from './timer.module.scss';
 
@@ -44,61 +46,61 @@ const Timer = ({ shutOffTimer }: { shutOffTimer: any }) => {
   return (
     <>
       <div className={styles.timerDesktop}>
-        <div className={styles.circle} style={{ marginTop: 'calc(3.5 * 20px - 15px)' }}></div>
-        <div className={styles.connection} style={{ marginTop: 'calc(3.5 * 20px)' }}></div>
+        <Circle value={3.5} />
+        <Connection value={3.5} />
         <div className={styles.timeWrap}>
           <p className={styles.time}>{days}</p>
           <p>Days</p>
         </div>
-        <div className={styles.connection} style={{ marginTop: 'calc(1.5 * 20px)' }}></div>
+        <Connection value={1.5} />
         <div className={styles.timeWrap}>
           <p className={styles.time}>{hours}</p>
           <p>Hours</p>
         </div>
-        <div className={styles.connection} style={{ marginTop: 'calc(3 * 20px)' }}></div>
+        <Connection value={3} />
         <div className={styles.timeWrap}>
           <p className={styles.time}>{minutes}</p>
           <p>Minutes</p>
         </div>
-        <div className={styles.connection} style={{ marginTop: 'calc(2 * 20px)' }}></div>
+        <Connection value={2} />
         <div className={styles.timeWrap}>
           <p className={styles.time}>{seconds}</p>
           <p>Seconds</p>
         </div>
-        <div className={styles.connection} style={{ marginTop: 'calc(1 * 20px)' }}></div>
-        <div className={styles.circle} style={{ marginTop: 'calc(1 * 20px - 15px)' }}></div>
+        <Connection value={1} />
+        <Circle value={1} />
       </div>
       <div className={styles.timerMobile}>
         <div className={styles.timerRow}>
-          <div className={styles.circle} style={{ marginTop: 'calc(3.5 * 20px - 5px)' }}></div>
-          <div className={styles.connection} style={{ marginTop: 'calc(3.5 * 20px)' }}></div>
+          <Circle value={3.5} />
+          <Connection value={3.5} />
           <div className={styles.timeWrap}>
             <p className={styles.time}>{days}</p>
             <p>Days</p>
           </div>
-          <div className={styles.connection} style={{ marginTop: 'calc(1.5 * 20px)', width: '40px' }}></div>
+          <Connection value={1.5} />
           <div className={styles.timeWrap}>
             <p className={styles.time}>{hours}</p>
             <p>Hours</p>
           </div>
-          <div className={styles.connection} style={{ marginTop: 'calc(3 * 20px)' }}></div>
-          <div className={styles.circle} style={{ marginTop: 'calc(3 * 20px - 5px)' }}></div>
+          <Connection value={3} />
+          <Circle value={3} />
         </div>
 
         <div className={styles.timerRow}>
-          <div className={styles.circle} style={{ marginTop: 'calc(3 * 20px - 5px)' }}></div>
-          <div className={styles.connection} style={{ marginTop: 'calc(3 * 20px)' }}></div>
+          <Circle value={3} />
+          <Connection value={3} />
           <div className={styles.timeWrap}>
             <p className={styles.time}>{minutes}</p>
             <p>Minutes</p>
           </div>
-          <div className={styles.connection} style={{ marginTop: 'calc(2 * 20px)', width: '40px' }}></div>
+          <Connection value={2} />
           <div className={styles.timeWrap}>
             <p className={styles.time}>{seconds}</p>
             <p>Seconds</p>
           </div>
-          <div className={styles.connection} style={{ marginTop: 'calc(1 * 20px)' }}></div>
-          <div className={styles.circle} style={{ marginTop: 'calc(1 * 20px - 5px)' }}></div>
+          <Connection value={1} />
+          <Circle value={1} />
         </div>
       </div>
     </>
