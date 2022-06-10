@@ -1,6 +1,6 @@
 export const sections = [
   {
-    title: 'INFO NATURALMENTE TECNOLOGICI',
+    title: '<h1>INFO NATURALMENTE TECNOLOGICI</h1>',
     content: [
       `L’evento si propone di essere, come sempre, occasione di ritrovo della community di Syskrack nonché strumento di disseminazione culturale sul territorio. Crediamo fortemente nella concreta possibilità di cambiare il territorio cambiando le menti delle persone, sempre con particolare attenzione rivolta a quelle più giovani. Così, dopo le contingenze degli ultimi anni, abbiamo radunato nuove menti, con rinnovate energie, stimoli ed obiettivi.`,
       `Da questo connubio, a partire da febbraio, in linea con i principi fondanti dell’associazione <strong>abbiamo concepito Naturalmente Tecnologici</strong>. Unico nel suo genere è come uno strumento per far incontrare tutte le persone che abbiamo conosciuto attraverso le collaborazioni internazionali, nazionali e locali che abbiamo l’onore di poter raccontare.`,
@@ -11,7 +11,7 @@ export const sections = [
     ],
   },
   {
-    title: 'INFO CAMPING',
+    title: '<h2>INFO CAMPING</h2>',
     content: [
       `Attraverso anche il supporto dell’area camping, il ben noto <strong>Welcome to Tijuana Camp</strong> appositamente allestito, grazie alla generosità di un socio che ha messo a disposizione uno spazio poco fuori Grassano.`,
       `Il suddetto spazio, in 3 giorni, si trasformerà in un crogiuolo di esperienze, conoscenze e culture, unite da un profondo spirito di condivisione e ispirate dalla filosofia di Giuseppe “Peps” Porsia.`,

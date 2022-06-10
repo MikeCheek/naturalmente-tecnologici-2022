@@ -39,7 +39,7 @@ const Section = ({ title, content }: SectionProps) => {
       <div className={styles.title} style={style} ref={ref}>
         <Circle value={-1} />
         <Connection value={-1} />
-        <h2>{title}</h2>
+        <span dangerouslySetInnerHTML={{ __html: title }}></span>
         <Connection value={-1} />
         <Circle value={-1} />
       </div>

@@ -5,7 +5,13 @@ import { StaticImage } from 'gatsby-plugin-image';
 const Syskrack = () => {
   return (
     <>
-      <a href="https://syskrack.org" target="_blank" rel="noopener noreferrer" className={styles.syskrackMobile}>
+      <a
+        href="https://syskrack.org"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Syskrack"
+        className={styles.syskrackMobile}
+      >
         <StaticImage
           src="../../images/compactSyskrack.png"
           alt="Logo Syskrack"
@@ -14,7 +20,13 @@ const Syskrack = () => {
           width={60}
         />
       </a>
-      <a href="https://syskrack.org" target="_blank" rel="noopener noreferrer" className={styles.syskrackDesktop}>
+      <a
+        href="https://syskrack.org"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Syskrack"
+        className={styles.syskrackDesktop}
+      >
         <StaticImage
           src="../../images/compactSyskrack.png"
           alt="Logo Syskrack"
