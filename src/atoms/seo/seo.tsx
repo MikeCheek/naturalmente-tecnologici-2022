@@ -69,7 +69,9 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: SEOProps): JSX
           content: image,
         },
       ].concat(meta)}
-    />
+    >
+      <link rel="icon" href="https://nt.syskrack.org/favicon.ico" />
+    </Helmet>
   );
 };
 
