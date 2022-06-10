@@ -10,8 +10,10 @@ const Hero = () => {
   const [timer, setTimer] = useState<boolean>(true);
   return (
     <div className={styles.nt}>
-      <Logo />
-      {timer ? <Timer shutOffTimer={() => setTimer(false)} /> : <></>}
+      <div className={styles.first}>
+        <Logo />
+        {timer ? <Timer shutOffTimer={() => setTimer(false)} /> : <></>}
+      </div>
       {/*<AnimatedText text={'CATCH THE BUG'} />*/}
       {sections.map((item, index) => (
         <Section key={index} title={item.title} content={item.content} />
