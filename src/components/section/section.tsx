@@ -26,12 +26,12 @@ const Section = ({ title, content }: SectionProps) => {
   const style = {
     opacity: inView ? 1 : 0,
     transform: inView ? 'translateX(0)' : 'translateX(100px)',
-    transition: 'opacity 1s ease-out, transform 1s ease-out',
+    transition: 'opacity 0.7s ease-out, transform 0.7s ease-out',
   };
   const contentStyle = {
     opacity: contentInView ? 1 : 0,
     transform: contentInView ? 'translateX(0)' : 'translateX(100px)',
-    transition: 'opacity 1s ease-out, transform 1s ease-out',
+    transition: 'opacity 0.7s ease-out, transform 0.7s ease-out',
   };
 
   return (
