@@ -13,7 +13,7 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: SEOProps): JSX
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang: 'it',
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s - ${defaultTitle}` : undefined}
