@@ -68,6 +68,9 @@ module.exports = {
                 custom: `
                   # This is a custom rule!
                   # This is a another custom rule!
+                  RewriteEngine On
+                  RewriteCond %{HTTPS} off
+                  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
               `,
             },
         },
