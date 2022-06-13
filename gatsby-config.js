@@ -74,5 +74,12 @@ module.exports = {
               `,
             },
         },
+        {
+            resolve: `gatsby-plugin-canonical-urls`,
+            options: {
+                siteUrl: `https://nt.syskrack.org`,
+                stripQueryString: true,
+            },
+        },
     ],
 };
