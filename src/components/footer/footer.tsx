@@ -9,7 +9,7 @@ const Footer = () => {
       <p>
         Developed by{' '}
         <AnimatedText>
-          <a href="https://bit.ly/mikecheek" title="Michele Pulvirenti" target={'_blank'}>
+          <a href="https://bit.ly/mikecheek" title="Michele Pulvirenti" target="_blank" rel="noopener noreferrer">
             Michele Pulvirenti
           </a>
         </AnimatedText>
@@ -17,7 +17,12 @@ const Footer = () => {
       <p>
         Designed by{' '}
         <AnimatedText>
-          <a href="https://www.instagram.com/raffaellacip/" title="Raffaella Cipolla" target={'_blank'}>
+          <a
+            href="https://www.instagram.com/raffaellacip/"
+            title="Raffaella Cipolla"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Raffaella Cipolla
           </a>
         </AnimatedText>
