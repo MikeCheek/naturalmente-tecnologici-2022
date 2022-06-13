@@ -31,6 +31,14 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: SEOProps): JSX
           content: image,
         },
         {
+          property: `og:image:width`,
+          content: '400px',
+        },
+        {
+          property: `og:image:height`,
+          content: '185px',
+        },
+        {
           property: `og:url`,
           content: `https://nt.syskrack.org`,
         },
