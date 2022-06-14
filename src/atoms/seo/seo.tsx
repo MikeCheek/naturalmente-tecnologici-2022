@@ -10,6 +10,7 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: SEOProps): JSX
   //const defaultTitle = site.siteMetadata?.title
   const defaultTitle: string = 'Syskrack';
   const image = 'https://nt.syskrack.org/logo.png';
+
   return (
     <Helmet
       htmlAttributes={{
@@ -27,16 +28,32 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: SEOProps): JSX
           content: title,
         },
         {
+          property: `og:locale`,
+          content: 'it_IT',
+        },
+        {
           property: `og:image`,
           content: image,
         },
         {
+          property: `og:image:type`,
+          content: 'image/png',
+        },
+        {
+          property: `og:image:alt`,
+          content: title,
+        },
+        {
+          property: `og:image:secure_url`,
+          content: image,
+        },
+        {
           property: `og:image:width`,
-          content: '400px',
+          content: '737',
         },
         {
           property: `og:image:height`,
-          content: '185px',
+          content: '336',
         },
         {
           property: `og:url`,

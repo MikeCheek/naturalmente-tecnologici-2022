@@ -18,6 +18,8 @@ const Syskrack = () => {
           placeholder="tracedSVG"
           className={styles.syskrack}
           width={60}
+          height={60}
+          title="Logo Syskrack"
         />
       </a>
       <a
@@ -33,6 +35,8 @@ const Syskrack = () => {
           placeholder="tracedSVG"
           className={styles.syskrack}
           width={90}
+          height={90}
+          title="Logo Syskrack"
         />
       </a>
     </>
