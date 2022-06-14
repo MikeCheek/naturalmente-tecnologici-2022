@@ -9,7 +9,7 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: SEOProps): JSX
   const metaDescription: string = description; //|| site.siteMetadata.description
   //const defaultTitle = site.siteMetadata?.title
   const defaultTitle: string = 'Syskrack';
-  const image = 'https://nt.syskrack.org/logo-light.jpg';
+  const image = 'https://nt.syskrack.org/logo-og.jpg';
 
   return (
     <Helmet
