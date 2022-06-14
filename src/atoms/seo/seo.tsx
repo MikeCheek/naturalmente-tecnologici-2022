@@ -49,11 +49,11 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: SEOProps): JSX
         },
         {
           property: `og:image:width`,
-          content: '737',
+          content: '1200',
         },
         {
           property: `og:image:height`,
-          content: '336',
+          content: '630',
         },
         {
           property: `og:url`,
