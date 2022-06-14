@@ -73,7 +73,7 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: SEOProps): JSX
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           /*
