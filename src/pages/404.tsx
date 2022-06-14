@@ -21,12 +21,23 @@ const NotFoundPage = () => {
     <div style={pageStyle}>
       <SEO title="404: Syskrack Not found" />
       <Layout>
-        <Logo />
-        <h1>Syskrack not found</h1>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyItems: 'center',
+            marginTop: '150px',
+            width: '100%',
+          }}
+        >
+          <Logo />
+          <h1>Syskrack not found</h1>
 
-        <Link to="/" className={styled.link}>
-          <span>Go home</span>
-        </Link>
+          <Link to="/" className={styled.link}>
+            <span>Go home</span>
+          </Link>
+        </div>
       </Layout>
     </div>
   );
