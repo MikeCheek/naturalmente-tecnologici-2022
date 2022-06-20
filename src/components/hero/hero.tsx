@@ -5,6 +5,7 @@ import Section from '../section/section';
 import Timer from '../timer/timer';
 import * as styles from './hero.module.scss';
 import { sections } from '../../utility/sections';
+import WhereWhen from '../whereWhen/whereWhen';
 
 const Hero = () => {
   const [timer, setTimer] = useState<boolean>(true);
@@ -13,7 +14,9 @@ const Hero = () => {
       <div className={styles.first}>
         <Logo />
         {timer ? <Timer shutOffTimer={() => setTimer(false)} /> : <></>}
+        <WhereWhen />
       </div>
+
       {/*<AnimatedText text={'CATCH THE BUG'} />*/}
       {sections.map((item, index) => (
         <Section key={index} title={item.title} content={item.content} />

@@ -1,0 +1,107 @@
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    gap: 20px;
+    @media screen and (min-width: 768px) {
+        font-size: 1.5rem;
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
+.calendar {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    border-radius: 20px;
+    border: solid 2px var(--nt-blue);
+    border-bottom-width: 4px;
+    width: -webkit-fill-available;
+    z-index: 10;
+    @media screen and (min-width: 768px) {
+        width: 200px;
+    }
+    >* {
+        padding: 5px 10px 5px;
+    }
+    .monthYear {
+        background-color: var(--nt-blue);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        color: var(--nt-white);
+        margin-top: -1px;
+    }
+    .days {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: none;
+        gap: 5px;
+        >* {
+            padding: 5px 10px 5px;
+            border-radius: 10px;
+            border: solid 2px var(--nt-blue);
+            border-bottom-width: 4px;
+        }
+    }
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .mobile {
+        @extend .jumping;
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+    .desktop {
+        @extend .jumping;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    .grassano {
+        z-index: 10;
+        border-radius: 20px;
+        border: solid 2px var(--nt-blue);
+        border-bottom-width: 4px;
+        padding: 5px 10px 5px;
+        display: flex;
+        flex-direction: row;
+        width: max-content;
+        text-decoration: none;
+        color: var(--nt-blue);
+        &:hover {
+            transform: scale(1.02);
+        }
+         :first-child {
+            font-weight: bolder;
+        }
+    }
+}
+
+.jumping {
+    z-index: 10;
+    animation: jumping 5s infinite ease-in-out;
+}
+
+@keyframes jumping {
+    80% {
+        transform: translateY(0) rotate(40deg);
+    }
+    90% {
+        transform: translateY(-10px) rotate(40deg);
+    }
+    100% {
+        transform: translateY(0) rotate(40deg);
+    }
+}
