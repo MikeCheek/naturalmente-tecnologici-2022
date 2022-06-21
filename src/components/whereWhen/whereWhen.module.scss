@@ -19,23 +19,15 @@
     display: flex;
     padding: 0;
     flex-direction: column;
-    border-radius: 20px;
-    border: solid 2px var(--nt-blue);
-    border-bottom-width: 4px;
     width: -webkit-fill-available;
     z-index: 10;
+    font-weight: bolder;
+    font-size: 1.5rem;
     @media screen and (min-width: 768px) {
-        width: 200px;
+        font-size: 1.9rem;
     }
     >* {
         padding: 5px 10px 5px;
-    }
-    .monthYear {
-        background-color: var(--nt-blue);
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        color: var(--nt-white);
-        margin-top: -1px;
     }
     .days {
         display: flex;
@@ -43,12 +35,20 @@
         justify-content: center;
         align-items: center;
         background-color: none;
-        gap: 5px;
+        gap: 20px;
         >* {
-            padding: 5px 10px 5px;
-            border-radius: 10px;
-            border: solid 2px var(--nt-blue);
-            border-bottom-width: 4px;
+            padding: 10px 12px 10px;
+            border-radius: 50%;
+            background-color: var(--nt-blue);
+            color: var(--nt-white);
+            border: 2px solid var(--nt-blue);
+            cursor: pointer;
+            @media screen and (min-width: 768px) {
+                padding: 10px 15px 10px;
+            }
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 }

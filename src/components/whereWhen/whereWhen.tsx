@@ -6,14 +6,14 @@ const WhereWhen = () => {
   return (
     <div className={styles.date}>
       <span className={styles.calendar}>
-        <p className={styles.monthYear}>Agosto 2022</p>
+        <p>Grassano - Agosto 2022</p>
         <span className={styles.days}>
           <p>11</p>
           <p>12</p>
           <p>13</p>
         </span>
       </span>
-      <span className={styles.location}>
+      {/* <span className={styles.location}>
         <Insect
           fill="var(--nt-blue)"
           style={{ transform: 'rotate(40deg)' }}
@@ -41,7 +41,7 @@ const WhereWhen = () => {
         >
           Grassano (MT)
         </a>
-      </span>
+      </span> */}
     </div>
   );
 };
