@@ -1,28 +1,28 @@
 .date {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: 1.2rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
     gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
     @media screen and (min-width: 768px) {
-        font-size: 1.5rem;
         flex-direction: row;
+        font-size: 1.5rem;
         gap: 40px;
     }
 }
 
 .calendar {
     display: flex;
-    padding: 0;
     flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 0;
     width: -webkit-fill-available;
     z-index: 10;
-    font-weight: bolder;
-    font-size: 1.5rem;
     @media screen and (min-width: 768px) {
         font-size: 1.9rem;
     }
@@ -30,21 +30,27 @@
         padding: 5px 10px 5px;
     }
     .days {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
         align-items: center;
         background-color: none;
+        display: flex;
+        flex-direction: row;
         gap: 20px;
+        justify-content: center;
         >* {
-            padding: 10px 12px 10px;
-            border-radius: 50%;
+            align-items: center;
             background-color: var(--nt-blue);
-            color: var(--nt-white);
             border: 2px solid var(--nt-blue);
+            border-radius: 50%;
+            color: var(--nt-white);
             cursor: pointer;
+            display: flex;
+            height: 50px;
+            justify-content: center;
+            text-align: center;
+            width: 50px;
             @media screen and (min-width: 768px) {
-                padding: 10px 15px 10px;
+                height: 60px;
+                width: 60px;
             }
             &:hover {
                 transform: scale(1.1);
@@ -54,9 +60,9 @@
 }
 
 .location {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     .mobile {
         @extend .jumping;
         @media screen and (min-width: 768px) {
@@ -70,16 +76,16 @@
         }
     }
     .grassano {
-        z-index: 10;
-        border-radius: 20px;
         border: solid 2px var(--nt-blue);
         border-bottom-width: 4px;
-        padding: 5px 10px 5px;
+        border-radius: 20px;
+        color: var(--nt-blue);
         display: flex;
         flex-direction: row;
-        width: max-content;
+        padding: 5px 10px 5px;
         text-decoration: none;
-        color: var(--nt-blue);
+        width: max-content;
+        z-index: 10;
         &:hover {
             transform: scale(1.02);
         }
@@ -90,8 +96,8 @@
 }
 
 .jumping {
-    z-index: 10;
     animation: jumping 5s infinite ease-in-out;
+    z-index: 10;
 }
 
 @keyframes jumping {
