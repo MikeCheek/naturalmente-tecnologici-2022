@@ -1,6 +1,6 @@
 export const sections = [
   {
-    title: '<h1>INFO NATURALMENTE TECNOLOGICI</h1>',
+    title: '<h1>NATURALMENTE TECNOLOGICI</h1>',
     content: [
       `L’evento si propone di essere, come sempre, occasione di ritrovo della community di Syskrack nonché strumento di disseminazione culturale sul territorio. Crediamo fortemente nella concreta possibilità di cambiare il territorio cambiando le menti delle persone, sempre con particolare attenzione rivolta a quelle più giovani.`,
       `Da questo connubio, in linea con i principi fondanti dell’associazione, abbiamo concepito <strong>Naturalmente Tecnologici</strong>.`,
