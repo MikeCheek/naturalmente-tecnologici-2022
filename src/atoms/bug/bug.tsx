@@ -19,8 +19,8 @@ const Bug = ({ time = 5000, top = 100, left = -105, click }: BugProps) => {
     if (bug) {
       const bugStyle = bug.style;
       const bugRect = bug.getBoundingClientRect();
-      const randLeft = randInt(0, window.innerWidth);
-      const randTop = randInt(0, window.innerHeight);
+      const randLeft = randInt(0, window.innerWidth - 100);
+      const randTop = randInt(0, window.innerHeight - 100);
       const offL = randLeft - bugRect.left;
       const offT = randTop - bugRect.top;
 
