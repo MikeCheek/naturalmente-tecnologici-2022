@@ -11,46 +11,57 @@ const Greenwood = () => {
   return (
     <>
       <div className={styles.greenwoodMobile}>
-        <Branch1 fill="var(--svg-front)" style={{ left: '-6%', transform: 'rotate(135deg)' }} alt={ntalt + ' ramo'} />
-        <Branch1
-          fill="var(--svg-front)"
-          style={{ right: '-6%', transform: 'rotate(-135deg) rotateY(180deg)' }}
-          alt={ntalt + ' ramo'}
-        />
-        <Flower1
-          fill="var(--svg-front)"
-          style={{ bottom: '0%', left: '-2%', transform: 'rotate(45deg)', width: 'auto' }}
-          alt={ntalt + ' fiore'}
-        />
-        <Flower1
-          fill="var(--svg-front)"
-          style={{ bottom: '0%', right: '-2%', transform: 'rotate(-45deg) rotateY(180deg)', width: 'auto' }}
-          alt={ntalt + ' fiore'}
-        />
+        <span style={{ left: '-25px' }} className={styles.enterTopLeft}>
+          <Branch1
+            fill="var(--svg-front)"
+            style={{ transform: 'rotate(135deg)', height: '100%' }}
+            alt={ntalt + ' ramo'}
+          />
+        </span>
+        <span style={{ right: '-25px' }} className={styles.enterTopRight}>
+          <Branch1
+            fill="var(--svg-front)"
+            style={{ transform: 'rotate(-135deg) rotateY(180deg)', height: '100%' }}
+            alt={ntalt + ' ramo'}
+          />
+        </span>
+        <span style={{ bottom: '0', left: '-38px', width: 'auto' }} className={styles.enterBottomLeft}>
+          <Flower1
+            fill="var(--svg-front)"
+            style={{ transform: 'rotate(45deg)', height: '100%' }}
+            alt={ntalt + ' fiore'}
+          />
+        </span>
+        <span style={{ bottom: '0', right: '-38px', width: 'auto' }} className={styles.enterBottomRight}>
+          <Flower1
+            style={{ transform: 'rotate(-45deg) rotateY(180deg)', height: '100%' }}
+            fill="var(--svg-front)"
+            alt={ntalt + ' fiore'}
+          />
+        </span>
       </div>
       <div className={styles.greenwoodDesktop}>
-        <Branch1 fill="var(--svg-front)" style={{ left: '-1%', transform: 'rotate(135deg)' }} alt={ntalt + ' ramo'} />
-        <Branch1
-          fill="var(--svg-front)"
-          style={{ right: '-3%', top: 'calc(50% - 100px)', transform: 'rotate(-90deg)', transition: 'top 1s ease' }}
-          alt={ntalt + ' ramo'}
-        />
-        <Branch2
-          fill="var(--svg-front)"
-          style={{ left: '-1.5%', top: 'calc(50% - 100px)', transform: 'rotate(90deg)', transition: 'top 1s ease' }}
-          alt={ntalt + ' ramo'}
-        />
-        <Branch2 fill="var(--svg-front)" style={{ right: '0', transform: 'rotate(-135deg)' }} alt={ntalt + ' ramo'} />
-        <Flower1
-          fill="var(--svg-front)"
-          style={{ bottom: '0%', left: '-1.5%', transform: 'rotate(45deg)', width: 'auto' }}
-          alt={ntalt + ' fiore'}
-        />
-        <Flower2
-          fill="var(--svg-front)"
-          style={{ bottom: '0%', right: '-1.5%', transform: 'rotate(-45deg)', width: 'auto' }}
-          alt={ntalt + ' fiore'}
-        />
+        <span style={{ left: '-13px' }} className={styles.enterTopLeft}>
+          <Branch1 style={{ transform: 'rotate(135deg)' }} fill="var(--svg-front)" alt={ntalt + ' ramo'} />
+        </span>
+
+        <span style={{ right: '-38px', top: 'calc(50% - 100px)' }} className={styles.enterRight}>
+          <Branch1 fill="var(--svg-front)" style={{ transform: 'rotate(-90deg)' }} alt={ntalt + ' ramo'} />
+        </span>
+
+        <span style={{ left: '-22px', top: 'calc(50% - 100px)' }} className={styles.enterLeft}>
+          <Branch2 style={{ transform: 'rotate(90deg)' }} fill="var(--svg-front)" alt={ntalt + ' ramo'} />
+        </span>
+        <span style={{ right: '-5px' }} className={styles.enterTopRight}>
+          <Branch2 fill="var(--svg-front)" style={{ transform: 'rotate(-135deg)' }} alt={ntalt + ' ramo'} />
+        </span>
+
+        <span style={{ bottom: '0', left: '-23px', width: 'auto' }} className={styles.enterBottomLeft}>
+          <Flower1 style={{ transform: 'rotate(45deg)' }} fill="var(--svg-front)" alt={ntalt + ' fiore'} />
+        </span>
+        <span style={{ bottom: '0', right: '-23px', width: 'auto' }} className={styles.enterBottomRight}>
+          <Flower2 fill="var(--svg-front)" style={{ transform: 'rotate(-45deg)' }} alt={ntalt + ' fiore'} />
+        </span>
       </div>
     </>
   );
