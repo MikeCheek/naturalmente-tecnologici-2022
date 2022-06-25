@@ -6,6 +6,7 @@ import Timer from '../timer/timer';
 import * as styles from './hero.module.scss';
 import { sections } from '../../utility/sections';
 import WhereWhen from '../whereWhen/whereWhen';
+import Slider from '../slider/slider';
 
 const Hero = () => {
   const [timer, setTimer] = useState<boolean>(true);
@@ -21,6 +22,7 @@ const Hero = () => {
       {sections.map((item, index) => (
         <Section key={index} title={item.title} content={item.content} />
       ))}
+      <Slider />
     </div>
   );
 };
