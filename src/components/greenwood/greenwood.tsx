@@ -32,12 +32,12 @@ const Greenwood = () => {
         <Branch1 fill="var(--svg-front)" style={{ left: '-1%', transform: 'rotate(135deg)' }} alt={ntalt + ' ramo'} />
         <Branch1
           fill="var(--svg-front)"
-          style={{ right: '-3%', top: 'calc(50% - 100px)', transform: 'rotate(-90deg)' }}
+          style={{ right: '-3%', top: 'calc(50% - 100px)', transform: 'rotate(-90deg)', transition: 'top 1s ease' }}
           alt={ntalt + ' ramo'}
         />
         <Branch2
           fill="var(--svg-front)"
-          style={{ left: '-1.5%', top: 'calc(50% - 100px)', transform: 'rotate(90deg)' }}
+          style={{ left: '-1.5%', top: 'calc(50% - 100px)', transform: 'rotate(90deg)', transition: 'top 1s ease' }}
           alt={ntalt + ' ramo'}
         />
         <Branch2 fill="var(--svg-front)" style={{ right: '0', transform: 'rotate(-135deg)' }} alt={ntalt + ' ramo'} />
