@@ -3,6 +3,7 @@
     height: 100%;
     margin: -10px;
     z-index: 10;
+    overflow: hidden;
     >* {
         position: fixed;
         height: 100px;
@@ -25,5 +26,85 @@
     display: none;
     @media screen and (min-width: 768px) {
         display: block;
+    }
+}
+
+$animation-duration: 2.5s;
+$animation-timing-function: ease; //cubic-bezier(0.31, 0.28, 0.5, 1.3);
+.enterTopLeft {
+    animation: enterTopLeft $animation-duration $animation-timing-function;
+}
+
+.enterLeft {
+    animation: enterLeft $animation-duration $animation-timing-function;
+}
+
+.enterBottomLeft {
+    animation: enterBottomLeft $animation-duration $animation-timing-function;
+}
+
+.enterTopRight {
+    animation: enterTopRight $animation-duration $animation-timing-function;
+}
+
+.enterRight {
+    animation: enterRight $animation-duration $animation-timing-function;
+}
+
+.enterBottomRight {
+    animation: enterBottomRight $animation-duration $animation-timing-function;
+}
+
+@keyframes enterTopLeft {
+    from {
+        transform: translateX(-100%) rotate(45deg);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes enterLeft {
+    from {
+        transform: translateX(-150%);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes enterBottomLeft {
+    from {
+        transform: translateX(-100%) rotate(-45deg);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes enterTopRight {
+    from {
+        transform: translateX(100%) rotate(-45deg);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes enterRight {
+    from {
+        transform: translateX(150%);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes enterBottomRight {
+    from {
+        transform: translateX(100%) rotate(45deg);
+    }
+    to {
+        transform: none;
     }
 }
