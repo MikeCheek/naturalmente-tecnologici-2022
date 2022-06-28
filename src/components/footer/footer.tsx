@@ -9,12 +9,7 @@ const Footer = () => {
       <p>
         Developed by{' '}
         <AnimatedText>
-          <a
-            href="https://bit.ly/michelepulvirentiweb"
-            title="Michele Pulvirenti"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://bit.ly/mikecheekgit" title="Michele Pulvirenti" target="_blank" rel="noopener noreferrer">
             Michele Pulvirenti
           </a>
         </AnimatedText>
