@@ -33,7 +33,7 @@ const Hero = () => {
         {showButton ? (
           <Button text={formText} href={formLink} />
         ) : (
-          <p style={{ fontSize: '1.2rem', textAlign: 'center' }}>{formAltText}</p>
+          <p style={{ fontSize: '1.2rem', textAlign: 'center', marginLeft: '10%', marginRight: '10%' }}>{formAltText}</p>
         )}
         <WhereWhen />
       </div>
@@ -50,7 +50,7 @@ const Hero = () => {
       {showButton ? (
         <Button text={formText} href={formLink} />
       ) : (
-        <p style={{ fontSize: '1.2rem', textAlign: 'center' }}>{formAltText}</p>
+        <p style={{ fontSize: '1.2rem', textAlign: 'center', marginLeft: '10%', marginRight: '10%'}}>{formAltText}</p>
       )}
       <Slider />
     </div>
