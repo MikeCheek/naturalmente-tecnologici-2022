@@ -11,8 +11,14 @@
     @media screen and (min-width: 768px) {
         margin-top: 300px;
     }
-    p {
+    & span {
         margin-left: 2rem;
         margin-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
     }
 }
