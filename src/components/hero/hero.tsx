@@ -30,7 +30,11 @@ const Hero = () => {
       <div className={styles.first}>
         <Logo />
         {timer ? <Timer shutOffTimer={() => setTimer(false)} /> : <></>}
-        {showButton ? <Button text={formText} href={formLink} /> : <p style={{ fontSize: '1.2rem' }}>{formAltText}</p>}
+        {showButton ? (
+          <Button text={formText} href={formLink} />
+        ) : (
+          <p style={{ fontSize: '1.2rem', textAlign: 'center' }}>{formAltText}</p>
+        )}
         <WhereWhen />
       </div>
 
@@ -43,7 +47,11 @@ const Hero = () => {
         text="Camping Location"
         href={`https://www.google.com/maps/place/40%C2%B037'56.6%22N+16%C2%B018'31.7%22E`}
       />
-      {showButton ? <Button text={formText} href={formLink} /> : <p style={{ fontSize: '1.2rem' }}>{formAltText}</p>}
+      {showButton ? (
+        <Button text={formText} href={formLink} />
+      ) : (
+        <p style={{ fontSize: '1.2rem', textAlign: 'center' }}>{formAltText}</p>
+      )}
       <Slider />
     </div>
   );
