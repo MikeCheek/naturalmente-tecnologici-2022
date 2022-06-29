@@ -8,12 +8,11 @@
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    gap: 2rem;
     @media screen and (min-width: 768px) {
         margin-top: 300px;
     }
     & span {
-        margin-left: 2rem;
-        margin-right: 2rem;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
