@@ -14,9 +14,9 @@ export const sections = [
     title: '<h2>INFO CAMPING</h2>',
     content: [
       `Attraverso anche il supporto dell’area camping, il ben noto <strong>Welcome to Tijuana Camp</strong> verrà appositamente allestito, grazie alla generosità di un socio che ha messo a disposizione uno spazio poco fuori Grassano.`,
-      `Il suddetto spazio, in 3 giorni, si trasformerà in un crogiuolo di esperienze, conoscenze e culture, unite da un profondo spirito di condivisione e ispirate dalla filosofia di Giuseppe “Peps” Porsia.`,
-      `Nell’area camping si susseguiranno spettacoli artistici, workshop e momenti di socialità. Saranno benvenute e benvenuti tutti i sostenitori dell’evento e dell’associazione fino a raggiungimento della massima capienza.`,
-      `Vediamo nel campeggio non solo l’utile appoggio ma soprattutto ci vediamo un’esperienza.`,
+      `Il suddetto spazio, in 3 giorni, si trasformerà in un <strong>crogiuolo di esperienze, conoscenze e culture</strong>, unite da un profondo spirito di <strong>condivisione</strong> e ispirate dalla filosofia di Giuseppe “Peps” Porsia.`,
+      `Nell’area camping si susseguiranno spettacoli artistici, workshop e momenti di socialità. Saranno benvenute e benvenuti tutti i sostenitori dell’evento e dell’associazione fino a raggiungimento della <strong>massima capienza</strong>.`,
+      `Vediamo nel campeggio non solo l’utile appoggio ma soprattutto ci vediamo un’<strong>esperienza</strong>.`,
     ],
   },
 ];
