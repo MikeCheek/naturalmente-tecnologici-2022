@@ -19,7 +19,6 @@ const Hero = () => {
   useEffect(() => {
     const now = new Date();
     const firstJuly = new Date('July 1, 2022 00:00:00');
-    console.log(now.getTime(), firstJuly.getTime());
     if (now.getTime() > firstJuly.getTime()) {
       setShowButton(true);
     }
@@ -33,7 +32,9 @@ const Hero = () => {
         {showButton ? (
           <Button text={formText} href={formLink} />
         ) : (
-          <p style={{ fontSize: '1.2rem', textAlign: 'center', marginLeft: '10%', marginRight: '10%' }}>{formAltText}</p>
+          <p style={{ fontSize: '1.2rem', textAlign: 'center', marginLeft: '10%', marginRight: '10%' }}>
+            {formAltText}
+          </p>
         )}
         <WhereWhen />
       </div>
@@ -50,7 +51,7 @@ const Hero = () => {
       {showButton ? (
         <Button text={formText} href={formLink} />
       ) : (
-        <p style={{ fontSize: '1.2rem', textAlign: 'center', marginLeft: '10%', marginRight: '10%'}}>{formAltText}</p>
+        <p style={{ fontSize: '1.2rem', textAlign: 'center', marginLeft: '10%', marginRight: '10%' }}>{formAltText}</p>
       )}
       <Slider />
     </div>
