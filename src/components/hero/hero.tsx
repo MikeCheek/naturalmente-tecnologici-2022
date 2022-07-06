@@ -12,7 +12,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const Hero = () => {
   const [timer, setTimer] = useState<boolean>(true);
-  const formLink = 'https://bit.ly/3yKebkd';
+  const formLink = 'https://bit.ly/3nGnUBU';
   const formText = 'Iscriviti al Camping';
 
   return (
