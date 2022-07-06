@@ -1,51 +1,55 @@
 @import 'scrollbar';
 :root {
-    --nt-blue: #014dfe;
-    --nt-transparent-blue: #014dfe55;
-    --nt-very-transparent-blue: #014dfe09;
-    --nt-green: #5ddb3a;
-    --nt-transparent-green: #5ddb3a83;
-    --nt-orange: #ff7000;
-    --nt-transparent-orange: #ff700083;
-    --nt-purple: #b400ff;
-    --nt-transparent-purple: #b400ff83;
-    --nt-black: #000000;
-    --nt-transparent-black: #00000083;
-    --light-blue: #bdd0fb;
-    --nt-white: #ffffff;
-    --nt-grey: #a9a9a9;
-    --svg-front: var(--nt-blue);
-    --svg-back: var(--nt-grey);
+  --nt-blue: #014dfe;
+  --nt-transparent-blue: #014dfe55;
+  --nt-very-transparent-blue: #014dfe09;
+  --nt-green: #5ddb3a;
+  --nt-transparent-green: #5ddb3a83;
+  --nt-orange: #ff7000;
+  --nt-transparent-orange: #ff700083;
+  --nt-purple: #b400ff;
+  --nt-transparent-purple: #b400ff83;
+  --nt-black: #000000;
+  --nt-transparent-black: #00000083;
+  --light-blue: #bdd0fb;
+  --nt-white: #ffffff;
+  --nt-grey: #a9a9a9;
+  --svg-front: var(--nt-blue);
+  --svg-back: var(--nt-grey);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-    background-color: var(--nt-white);
-    color: var(--svg-front);
-    /*
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--nt-white);
+  color: var(--svg-front);
+  /*
     background: linear-gradient( -45deg, var(--nt-transparent-green), var(--nt-transparent-orange), var(--nt-transparent-purple), var(--nt-transparent-black));
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     */
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
 
 p {
-    margin: 0;
-    margin-bottom: 10px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

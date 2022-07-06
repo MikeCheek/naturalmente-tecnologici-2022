@@ -8,10 +8,11 @@ import { sections } from '../../utility/sections';
 import WhereWhen from '../whereWhen/whereWhen';
 import Slider from '../slider/slider';
 import Button from '../../atoms/button/button';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Hero = () => {
   const [timer, setTimer] = useState<boolean>(true);
-  const formLink = 'https://forms.gle/Sm1e566Z3Wn3NGTk9';
+  const formLink = 'https://bit.ly/3yKebkd';
   const formText = 'Iscriviti al Camping';
 
   return (
@@ -22,6 +23,11 @@ const Hero = () => {
         <Button text={formText} href={formLink} />
         <WhereWhen />
       </div>
+      <StaticImage
+        className={styles.program}
+        src="../../images/programma.jpg"
+        alt="Programma Naturalmente Tecnologici"
+      />
       {sections.map((item, index) => (
         <Section key={index} title={item.title} content={item.content} />
       ))}

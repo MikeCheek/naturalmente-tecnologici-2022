@@ -1,16 +1,19 @@
 import React from 'react';
 import * as styles from './whereWhen.module.scss';
-import Insect from '../../assets/insect.svg';
 
 const WhereWhen = () => {
+  const handleClick = () => {
+    window.scroll(0, window.innerHeight);
+  };
+
   return (
     <div className={styles.date}>
       <span className={styles.calendar}>
         <p>Grassano - Agosto 2022</p>
         <span className={styles.days}>
-          <p>11</p>
-          <p>12</p>
-          <p>13</p>
+          <p onClick={handleClick}>11</p>
+          <p onClick={handleClick}>12</p>
+          <p onClick={handleClick}>13</p>
         </span>
       </span>
       {/* <span className={styles.location}>
