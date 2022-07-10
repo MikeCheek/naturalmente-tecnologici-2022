@@ -23,14 +23,17 @@ const Hero = () => {
         <Button text={formText} href={formLink} />
         <WhereWhen />
       </div>
-      <StaticImage
-        className={styles.program}
-        src="../../images/programma.jpg"
-        alt="Programma Naturalmente Tecnologici"
-      />
-      {sections.map((item, index) => (
-        <Section key={index} title={item.title} content={item.content} />
-      ))}
+
+      <Section title={sections[0].title} content={sections[0].content} />
+      <Section title={'<h2>Programma</h2>'}>
+        <StaticImage
+          className={styles.program}
+          src="../../images/programma.jpg"
+          alt="Programma Naturalmente Tecnologici"
+        />
+      </Section>
+      <Section title={sections[1].title} content={sections[1].content} />
+
       <Button
         text="Camping Location"
         href={`https://www.google.com/maps/place/40%C2%B037'56.6%22N+16%C2%B018'31.7%22E`}

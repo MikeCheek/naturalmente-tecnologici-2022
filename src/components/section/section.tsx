@@ -7,10 +7,11 @@ import * as styles from './section.module.scss';
 
 interface SectionProps {
   title: string;
-  content: Array<string>;
+  content?: Array<string>;
+  children?: React.ReactNode;
 }
 
-const Section = ({ title, content }: SectionProps) => {
+const Section = ({ title, content, children }: SectionProps) => {
   const [ref, inView, _entry] = useInView({
     threshold: 0,
     fallbackInView: true,
@@ -44,9 +45,7 @@ const Section = ({ title, content }: SectionProps) => {
         <Circle value={-1} />
       </div>
       <div className={styles.contentWrap} ref={contentRef} style={contentStyle}>
-        {content.map((item, index) => (
-          <Paragraph key={index} content={item}></Paragraph>
-        ))}
+        {children ?? content?.map((item, index) => <Paragraph key={index} content={item}></Paragraph>)}
       </div>
     </div>
   );
