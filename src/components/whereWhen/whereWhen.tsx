@@ -3,7 +3,7 @@ import * as styles from './whereWhen.module.scss';
 
 const WhereWhen = () => {
   const handleClick = () => {
-    window.scroll(0, window.innerHeight);
+    document.getElementById('programma').scrollIntoView();
   };
 
   return (
