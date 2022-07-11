@@ -9,9 +9,10 @@ interface SectionProps {
   title: string;
   content?: Array<string>;
   children?: React.ReactNode;
+  id?: string;
 }
 
-const Section = ({ title, content, children }: SectionProps) => {
+const Section = ({ title, content, children, id = ''}: SectionProps) => {
   const [ref, inView, _entry] = useInView({
     threshold: 0,
     fallbackInView: true,
@@ -36,7 +37,7 @@ const Section = ({ title, content, children }: SectionProps) => {
   };
 
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id={id} >
       <div className={styles.title} style={style} ref={ref}>
         <Circle value={-1} />
         <Connection value={-1} />
