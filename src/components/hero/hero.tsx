@@ -25,7 +25,7 @@ const Hero = () => {
       </div>
 
       <Section title={sections[0].title} content={sections[0].content} />
-      <Section title={'<h2>Programma</h2>'}>
+      <Section title={'<h2>Programma</h2>'} id={'programma'} >
         <StaticImage
           className={styles.program}
           src="../../images/programma.jpg"
