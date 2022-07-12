@@ -11,7 +11,7 @@ interface GuestCardProps extends GuestInfo {
 const GuestCard = ({ children, name, field, theme, about, reversed }: GuestCardProps) => {
   return (
     <div className={`${styles.card} ${reversed ? styles.cardReversed : ''}`}>
-      <span>{children}</span>
+      {children}
       <div className={styles.details}>
         <span className={`${styles.title} ${reversed ? styles.titleReversed : ''}`}>
           <h3>{name}</h3>

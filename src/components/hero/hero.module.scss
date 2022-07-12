@@ -19,4 +19,7 @@
 
 .program {
   border-radius: 10px;
+  @media screen and (min-width: 768px) {
+    margin: 0 15%;
+  }
 }

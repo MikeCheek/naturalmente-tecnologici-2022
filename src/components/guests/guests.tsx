@@ -9,15 +9,30 @@ const Guests = () => {
   const paolo = guestsInfo[1];
   const poki = guestsInfo[2];
   return (
-    <div>
+    <div className={styles.guests}>
       <GuestCard name={carlo.name} field={carlo.field} about={carlo.about} theme={carlo.theme}>
-        <StaticImage className={styles.image} src="../../images/guests/carlo.jpg" alt={carlo.name} />
+        <StaticImage
+          className={styles.image}
+          src="../../images/guests/carlo.jpg"
+          alt={carlo.name}
+          layout={'constrained'}
+        />
       </GuestCard>
       <GuestCard name={paolo.name} field={paolo.field} about={paolo.about} theme={paolo.theme} reversed>
-        <StaticImage className={styles.image} src="../../images/guests/paolo.jpg" alt={paolo.name} />
+        <StaticImage
+          className={styles.image}
+          src="../../images/guests/paolo.jpg"
+          alt={paolo.name}
+          layout={'constrained'}
+        />
       </GuestCard>
       <GuestCard name={poki.name} field={poki.field} about={poki.about} theme={poki.theme}>
-        <StaticImage className={styles.image} src="../../images/guests/poki.jpg" alt={poki.name} />
+        <StaticImage
+          className={`${styles.image} ${styles.imageLeft}`}
+          src="../../images/guests/poki.jpg"
+          alt={poki.name}
+          layout={'constrained'}
+        />
       </GuestCard>
     </div>
   );
