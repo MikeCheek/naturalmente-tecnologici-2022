@@ -10,6 +10,7 @@ import Slider from '../slider/slider';
 import Button from '../../atoms/button/button';
 import { StaticImage } from 'gatsby-plugin-image';
 import Guests from '../guests/guests';
+import Program from '../program/program';
 
 const Hero = () => {
   const [timer, setTimer] = useState<boolean>(true);
@@ -26,12 +27,8 @@ const Hero = () => {
       </div>
 
       <Section title={sections[0].title} content={sections[0].content} />
-      <Section title={'<h2>Programma</h2>'} id={'programma'} >
-        <StaticImage
-          className={styles.program}
-          src="../../images/programma.jpg"
-          alt="Programma Naturalmente Tecnologici"
-        />
+      <Section title={'<h2>Programma</h2>'} id={'programma'}>
+        <Program />
       </Section>
       <Section title={sections[1].title} content={sections[1].content} />
 

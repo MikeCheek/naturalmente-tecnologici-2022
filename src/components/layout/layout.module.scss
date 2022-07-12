@@ -1,14 +1,13 @@
 .wrap {
-    overflow-x: hidden;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
-    top: 10px;
-    position: absolute;
-    margin: auto;
+  top: 10px;
+  position: absolute;
+  margin: auto;
 }
