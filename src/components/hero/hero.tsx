@@ -27,7 +27,7 @@ const Hero = () => {
       </div>
 
       <Section title={sections[0].title} content={sections[0].content} />
-      <Section title={'<h2>Programma</h2>'} id={'programma'}>
+      <Section title={'<h2>Programma evento</h2>'} id={'programma'}>
         <Program />
       </Section>
       <Section title={sections[1].title} content={sections[1].content} />
@@ -38,7 +38,7 @@ const Hero = () => {
       />
       <Button text={formText} href={formLink} />
       <Slider />
-      <Section title={'<h2>Ospiti</h2>'}>
+      <Section title={'<h2>Ospiti evento</h2>'}>
         <Guests />
       </Section>
     </div>
