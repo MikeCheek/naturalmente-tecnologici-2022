@@ -9,6 +9,7 @@ import WhereWhen from '../whereWhen/whereWhen';
 import Slider from '../slider/slider';
 import Button from '../../atoms/button/button';
 import { StaticImage } from 'gatsby-plugin-image';
+import Guests from '../guests/guests';
 
 const Hero = () => {
   const [timer, setTimer] = useState<boolean>(true);
@@ -40,6 +41,9 @@ const Hero = () => {
       />
       <Button text={formText} href={formLink} />
       <Slider />
+      <Section title={'<h2>Ospiti</h2>'}>
+        <Guests />
+      </Section>
     </div>
   );
 };
