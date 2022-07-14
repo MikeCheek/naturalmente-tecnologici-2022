@@ -10,13 +10,15 @@ interface SectionProps {
   content?: Array<string>;
   children?: React.ReactNode;
   id?: string;
+  appearContent?: boolean;
 }
 
-const Section = ({ title, content, children, id = ''}: SectionProps) => {
+const Section = ({ title, content, children, id = '', appearContent = true }: SectionProps) => {
   const [ref, inView, _entry] = useInView({
     threshold: 0,
     fallbackInView: true,
     rootMargin: '-10% 0px -10% 0px',
+    delay: 500,
   });
 
   const [contentRef, contentInView, _contentEntry] = useInView({
@@ -37,7 +39,7 @@ const Section = ({ title, content, children, id = ''}: SectionProps) => {
   };
 
   return (
-    <div className={styles.section} id={id} >
+    <div className={styles.section} id={id}>
       <div className={styles.title} style={style} ref={ref}>
         <Circle value={-1} />
         <Connection value={-1} />
@@ -45,7 +47,11 @@ const Section = ({ title, content, children, id = ''}: SectionProps) => {
         <Connection value={-1} />
         <Circle value={-1} />
       </div>
-      <div className={styles.contentWrap} ref={contentRef} style={contentStyle}>
+      <div
+        className={styles.contentWrap}
+        ref={appearContent ? contentRef : null}
+        style={appearContent ? contentStyle : undefined}
+      >
         {children ?? content?.map((item, index) => <Paragraph key={index} content={item}></Paragraph>)}
       </div>
     </div>

@@ -37,10 +37,10 @@ const Hero = () => {
       />
       <Button text={formText} href={formLink} />
       <Slider />
-      <Section title={'<h2>Ospiti evento</h2>'}>
+      <Section title={'<h2>Ospiti evento</h2>'} appearContent={false}>
         <Guests />
       </Section>
-      <Section title={'<h2>Moderatori evento</h2>'}>
+      <Section title={'<h2>Moderatori evento</h2>'} appearContent={false}>
         <Moderators />
       </Section>
     </div>
