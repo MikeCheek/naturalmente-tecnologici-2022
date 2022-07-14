@@ -20,12 +20,16 @@
   }
   img {
     object-position: center center;
+    border-radius: 50px 10px;
   }
 }
 
 .imageReverse {
   @extend .image;
   border-radius: 10px 50px;
+  img {
+    border-radius: 10px 50px;
+  }
 }
 
 .imageLeft {
