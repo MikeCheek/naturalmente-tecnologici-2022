@@ -36,13 +36,13 @@ const Hero = () => {
         href={`https://www.google.com/maps/place/40%C2%B037'56.6%22N+16%C2%B018'31.7%22E`}
       />
       <Button text={formText} href={formLink} />
-      <Slider />
       <Section title={'<h2>Ospiti evento</h2>'} appearContent={false}>
         <Guests />
       </Section>
       <Section title={'<h2>Moderatori evento</h2>'} appearContent={false}>
         <Moderators />
       </Section>
+      <Slider />
     </div>
   );
 };

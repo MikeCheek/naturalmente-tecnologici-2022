@@ -14,7 +14,7 @@ export const guestsInfo: GuestInfo[] = [
     È tra gli <strong>ideatori Hackability</strong>, un <em>innovativo modello di co-design</em>.<br/>
     Carlo è anche il <strong>presidente dell’associazione MakPi</strong> che promuove l'attività dei fablab e dei laboratori creativi del nord-ovest.
     `,
-    theme: `Come la tecnologia può essere messa a disposizione delle persone per migliorare la vita partendo dal basso`,
+    theme: `Mai più Jedi della tecnologia. Come Fablab e makerspace possono diventare luogi aperti in grado di portare i vantaggi delle tecnologie a tutti..`,
   },
   {
     name: 'Paolo Bonelli',
@@ -27,7 +27,7 @@ export const guestsInfo: GuestInfo[] = [
     Di recente ha collaborato con gruppi di ricerca universitaria nel campo dell’acquisizione dei dati relativi alle <strong>risorse idriche del territorio</strong>.<br/>
     E’ docente presso la scuola SIAM di Milano e presso la Fastweb Digital Academy.    
     `,
-    theme: `Come la tecnologia può diventare strumenti di empowerment per il monitoraggio ambientale effettuato dai cittadini`,
+    theme: `Strumenti e tecnologie per monitorare l'ambiente. Come la tecnologia open source può rendere le persone vigilanti del patrimonio naturale`,
   },
   {
     name: 'Emanuele Poki',
