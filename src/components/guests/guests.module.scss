@@ -30,6 +30,18 @@
 
 .imageLeft {
   img {
+    object-position: 20% 100%;
+  }
+}
+
+.imageRight {
+  img {
     object-position: 90% 100%;
+  }
+}
+
+.imageTop {
+  img {
+    object-position: 50% 0%;
   }
 }
