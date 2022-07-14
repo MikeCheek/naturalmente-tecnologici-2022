@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import AnimatedText from '../../atoms/animatedText/animatedText';
 import Logo from '../../atoms/logo/logo';
 import Section from '../section/section';
 import Timer from '../timer/timer';
@@ -8,9 +7,9 @@ import { sections } from '../../utility/sections';
 import WhereWhen from '../whereWhen/whereWhen';
 import Slider from '../slider/slider';
 import Button from '../../atoms/button/button';
-import { StaticImage } from 'gatsby-plugin-image';
 import Guests from '../guests/guests';
 import Program from '../program/program';
+import Moderators from '../moderators/moderators';
 
 const Hero = () => {
   const [timer, setTimer] = useState<boolean>(true);
@@ -40,6 +39,9 @@ const Hero = () => {
       <Slider />
       <Section title={'<h2>Ospiti evento</h2>'}>
         <Guests />
+      </Section>
+      <Section title={'<h2>Moderatori evento</h2>'}>
+        <Moderators />
       </Section>
     </div>
   );
