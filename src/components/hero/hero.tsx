@@ -42,7 +42,9 @@ const Hero = () => {
       <Section title={'<h2>Moderatori evento</h2>'} appearContent={false}>
         <Moderators />
       </Section>
-      <Slider />
+      <Section title={'<h2>Galleria</h2>'} appearContent={false}>
+        <Slider />
+      </Section>
     </div>
   );
 };

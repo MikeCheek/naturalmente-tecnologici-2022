@@ -1,12 +1,11 @@
 .slider {
   border-radius: 10px;
   z-index: 5;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 100px;
+  margin-left: -10%;
+  margin-right: -10%;
   @media screen and (min-width: 768px) {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .imageWrap {
     height: 100%;
