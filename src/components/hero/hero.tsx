@@ -26,7 +26,7 @@ const Hero = () => {
       </div>
 
       <Section title={sections[0].title} content={sections[0].content} />
-      <Section title={'<h2>Programma evento</h2>'} id={'programma'}>
+      <Section title={'<h2>Programma evento</h2>'} id={'programma'} appearContent={false}>
         <Program />
       </Section>
       <Section title={sections[1].title} content={sections[1].content} />

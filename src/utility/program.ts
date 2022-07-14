@@ -10,9 +10,11 @@ export enum Type {
 
 export interface Event {
   name: string;
-  time: string;
+  from: string;
+  to: string;
   location: Location;
   type?: Type;
+  count?: number;
 }
 
 export interface Day {
@@ -28,41 +30,49 @@ export const program: Day[] = [
     schedule: [
       {
         name: 'Conferenza di benvenuto',
-        time: '10:00 - 12:00',
+        from: '10:00',
+        to: '12:00',
         location: Location.A,
         type: Type.F,
       },
       {
         name: `Esposizioni
                 Rinfresco`,
-        time: '12:00 - 13:00',
+        from: '12:00',
+        to: '13:00',
         location: Location.A,
       },
       {
         name: 'Pausa pranzo',
-        time: '13:00 - 15:00',
+        from: '13:00',
+        to: '15:00',
         location: Location.A,
       },
       {
         name: 'Conferenza Hackability',
-        time: '15:00 - 16:30',
+        from: '15:00',
+        to: '16:30',
         location: Location.A,
         type: Type.F,
       },
       {
         name: 'Conferenza CoScienza Ambientale',
-        time: '16:30 - 18:00',
+        from: '16:30',
+        to: '18:00',
         location: Location.A,
         type: Type.F,
       },
       {
         name: 'Esposizioni, Networking e Jam Session',
-        time: '18:00 - 20:00',
+        from: '18:00',
+        to: '20:00',
         location: Location.A,
+        count: 2,
       },
       {
         name: 'Attività al camping',
-        time: '20:00 to late',
+        from: '20:00',
+        to: ' late',
         location: Location.C,
       },
     ],
@@ -73,35 +83,43 @@ export const program: Day[] = [
     schedule: [
       {
         name: 'Laboratori*',
-        time: '10:00 - 13:00',
+        from: '10:00',
+        to: '13:00',
         location: Location.C,
         type: Type.W,
+        count: 2,
       },
       {
         name: 'Pausa pranzo',
-        time: '13:00 - 15:00',
+        from: '13:00',
+        to: '15:00',
         location: Location.C,
       },
       {
         name: 'Conferenza Prospettive Vegetali',
-        time: '15:00 - 16:30',
+        from: '15:00',
+        to: '16:30',
         location: Location.A,
         type: Type.F,
       },
       {
         name: 'Conferenza Emanuele Poki',
-        time: '16:30 - 18:00',
+        from: '16:30',
+        to: '18:00',
         location: Location.A,
         type: Type.F,
       },
       {
         name: 'Esposizioni, Networking e Jam Session',
-        time: '18:00 - 20:00',
+        from: '18:00',
+        to: '20:00',
         location: Location.A,
+        count: 2,
       },
       {
         name: 'Attività al camping',
-        time: '20:00 to late',
+        from: '20:00',
+        to: ' late',
         location: Location.C,
       },
     ],
@@ -112,41 +130,49 @@ export const program: Day[] = [
     schedule: [
       {
         name: 'Laboratori*',
-        time: '10:00 - 13:00',
+        from: '10:00',
+        to: '13:00',
         location: Location.C,
         type: Type.W,
+        count: 2,
       },
       {
         name: 'Pausa pranzo',
-        time: '13:00 - 15:00',
+        from: '13:00',
+        to: '15:00',
         location: Location.C,
       },
       {
         name: 'Conferenza Marina Berardi',
-        time: '15:00 - 16:30',
+        from: '15:00',
+        to: '16:30',
         location: Location.A,
         type: Type.F,
       },
       {
         name: 'Conferenza Museo Tradizioni e Territorio',
-        time: '16:30 - 18:00',
+        from: '16:30',
+        to: '18:00',
         location: Location.A,
         type: Type.F,
       },
       {
         name: 'Evento Conclusivo',
-        time: '18:00 - 19:00',
+        from: '18:00',
+        to: '19:00',
         location: Location.A,
         type: Type.F,
       },
       {
         name: 'Esposizioni, Networking e Jam Session',
-        time: '18:00 - 19:00',
+        from: '18:00',
+        to: '19:00',
         location: Location.A,
       },
       {
         name: 'Attività al camping',
-        time: '20:00 to late',
+        from: '20:00',
+        to: ' late',
         location: Location.C,
       },
     ],
