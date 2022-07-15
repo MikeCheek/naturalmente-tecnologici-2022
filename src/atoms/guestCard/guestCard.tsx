@@ -27,7 +27,7 @@ const GuestCard = ({ children, name, field, theme, about, reversed }: GuestCardP
         </div>
 
         <button className={styles.buttonMore} onClick={() => setMore((state) => !state)}>
-          Read{more ? ' less' : ' more'}
+          Leggi di{more ? ' meno' : ' più'}
         </button>
 
         {theme ? (
