@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
   // -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(0, 0, 0, 0.15)));
 
   @media screen and (min-width: 768px) {
