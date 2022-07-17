@@ -11,9 +11,15 @@ const WhereWhen = () => {
       <span className={styles.calendar}>
         <p>Grassano - Agosto 2022</p>
         <span className={styles.days}>
-          <p onClick={() => handleClick('11')}>11</p>
-          <p onClick={() => handleClick('12')}>12</p>
-          <p onClick={() => handleClick('13')}>13</p>
+          <p onClick={() => handleClick('11')} title="Vai al programma">
+            11
+          </p>
+          <p onClick={() => handleClick('12')} title="Vai al programma">
+            12
+          </p>
+          <p onClick={() => handleClick('13')} title="Vai al programma">
+            13
+          </p>
         </span>
       </span>
       {/* <span className={styles.location}>

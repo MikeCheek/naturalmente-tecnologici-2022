@@ -1,0 +1,19 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  a {
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    gap: 20px;
+    svg {
+      width: 40px;
+    }
+  }
+}
