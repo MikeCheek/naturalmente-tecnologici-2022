@@ -10,6 +10,8 @@ import Button from '../../atoms/button/button';
 import Guests from '../guests/guests';
 import Program from '../program/program';
 import Moderators from '../moderators/moderators';
+import Sponsor from '../sponsor/sponsor';
+import Social from '../social/social';
 
 const Hero = () => {
   const [timer, setTimer] = useState<boolean>(true);
@@ -25,10 +27,10 @@ const Hero = () => {
         <WhereWhen />
       </div>
 
+      <Social />
+
       <Section title={sections[0].title} content={sections[0].content} />
-      <Section title={'<h2>Programma evento</h2>'} id={'programma'} appearContent={false}>
-        <Program />
-      </Section>
+
       <Section title={sections[1].title} content={sections[1].content} />
 
       <Button
@@ -42,8 +44,16 @@ const Hero = () => {
       <Section title={'<h2>Moderatori evento</h2>'} appearContent={false}>
         <Moderators />
       </Section>
+      <Section title={'<h2>Programma evento</h2>'} id={'programma'} appearContent={false}>
+        <Program />
+      </Section>
+
       <Section title={'<h2>Galleria</h2>'} appearContent={false}>
         <Slider />
+      </Section>
+
+      <Section title={'<h2>Sponsor</h2>'} appearContent={false}>
+        <Sponsor />
       </Section>
     </div>
   );

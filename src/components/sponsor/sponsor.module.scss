@@ -1,0 +1,34 @@
+.sponsor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+
+.wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 150px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  @media screen and (min-width: 768px) {
+    flex: 1 1 200px;
+  }
+}
+
+.logo {
+  width: 150px;
+  height: fit-content;
+  border-radius: 20px;
+  @media screen and (min-width: 768px) {
+    width: 200px;
+  }
+}

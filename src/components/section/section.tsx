@@ -18,7 +18,7 @@ const Section = ({ title, content, children, id = '', appearContent = true }: Se
     threshold: 0,
     fallbackInView: true,
     rootMargin: '-10% 0px -10% 0px',
-    delay: 500,
+    delay: 200,
   });
 
   const [contentRef, contentInView, _contentEntry] = useInView({
