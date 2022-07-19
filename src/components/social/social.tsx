@@ -7,6 +7,8 @@ import * as styles from './social.module.scss';
 
 const Social = () => {
   return (
+    <>
+    <a href="https://syskrack.org" target="_blank">Scopri la nostra associazione</a>
     <div className={styles.social}>
       <a href="https://www.facebook.com/syskrackgiuseppeporsia/" target="_blank" rel="noopener noreferrer">
         <Facebook fill="var(--nt-blue)" width={60} />
@@ -22,6 +24,7 @@ const Social = () => {
         <Telegram fill="var(--nt-blue)" width={60} />
       </a>
     </div>
+    </>
   );
 };
 
