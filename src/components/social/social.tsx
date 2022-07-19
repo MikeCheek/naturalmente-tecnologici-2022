@@ -3,12 +3,15 @@ import Facebook from '../../assets/social/facebook.svg';
 import Instagram from '../../assets/social/instagram.svg';
 import Linkedin from '../../assets/social/linkedin.svg';
 import Telegram from '../../assets/social/telegram.svg';
+import Internet from '../../assets/social/internet.svg';
 import * as styles from './social.module.scss';
 
 const Social = () => {
   return (
     <>
-    <a href="https://syskrack.org" target="_blank">Scopri la nostra associazione</a>
+    <a href="https://syskrack.org" target="_blank" >
+      <Internet fill="var(--nt-blue)" width={60} />
+    </a>
     <div className={styles.social}>
       <a href="https://www.facebook.com/syskrackgiuseppeporsia/" target="_blank" rel="noopener noreferrer">
         <Facebook fill="var(--nt-blue)" width={60} />
