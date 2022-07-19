@@ -8,11 +8,12 @@ import * as styles from './social.module.scss';
 
 const Social = () => {
   return (
-    <>
-    <a href="https://syskrack.org" target="_blank" >
-      <Internet fill="var(--nt-blue)" width={60} />
-    </a>
     <div className={styles.social}>
+      <div style={{ flex-grow: 10 }} >
+        <a href="https://syskrack.org" target="_blank" >
+          <Internet fill="var(--nt-blue)" width={60} />
+        </a>
+      </div>
       <a href="https://www.facebook.com/syskrackgiuseppeporsia/" target="_blank" rel="noopener noreferrer">
         <Facebook fill="var(--nt-blue)" width={60} />
       </a>
@@ -27,7 +28,6 @@ const Social = () => {
         <Telegram fill="var(--nt-blue)" width={60} />
       </a>
     </div>
-    </>
   );
 };
 
