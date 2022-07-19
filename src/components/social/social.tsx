@@ -9,7 +9,7 @@ import * as styles from './social.module.scss';
 const Social = () => {
   return (
     <div className={styles.social}>
-      <div style={{ flex-grow: 10 }} >
+      <div style={{ flexGrow: 10 }} >
         <a href="https://syskrack.org" target="_blank" >
           <Internet fill="var(--nt-blue)" width={60} />
         </a>
