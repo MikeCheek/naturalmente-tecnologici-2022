@@ -9,18 +9,15 @@ import * as styles from './social.module.scss';
 const Social = () => {
   return (
     <div className={styles.social}>
-      <div style={{ flexGrow: 10 }} >
-        <a href="https://syskrack.org" target="_blank" >
-          <Internet fill="var(--nt-blue)" width={60} />
-        </a>
-      </div>
+      <a href="https://syskrack.org" target="_blank" >
+        <Internet fill="var(--nt-blue)" width={60} />
+      </a>
       <a href="https://www.facebook.com/syskrackgiuseppeporsia/" target="_blank" rel="noopener noreferrer">
         <Facebook fill="var(--nt-blue)" width={60} />
       </a>
       <a href="https://www.instagram.com/syskrack_giuseppeporsia/" target="_blank" rel="noopener noreferrer">
         <Instagram fill="var(--nt-blue)" width={60} />
       </a>
-
       <a href="https://www.linkedin.com/company/syskrack-lab/" target="_blank" rel="noopener noreferrer">
         <Linkedin fill="var(--nt-blue)" width={60} height={60} style={{ borderRadius: '10px' }} />
       </a>
