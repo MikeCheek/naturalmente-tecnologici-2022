@@ -3,7 +3,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 0 20px;
   width: 100%;
   a {
     &:hover {
@@ -11,7 +12,6 @@
     }
   }
   @media screen and (max-width: 768px) {
-    gap: 20px;
     svg {
       width: 40px;
     }
