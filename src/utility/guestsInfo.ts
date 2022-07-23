@@ -39,6 +39,7 @@ export const guestsInfo: GuestInfo[] = [
      In questi anni di attività fa parte del <strong>collettivo Res Publica Temporanea</strong>.<br/>
      Ha iniziato collaborazioni con enti scientifici come l'<strong>Orto botanico di Catania</strong>, il <strong>museo delle scienze naturali</strong> di Trieste e quello di Brescia per <strong>consulenze e collaborazioni</strong>, per <strong>Systema Naturae</strong> un progetto sull’<strong>educazione ambientale</strong> e la tutela delle <strong>specie autoctone e del territorio</strong>.
     `,
+    theme: `Esperimento d'innesto tra arte, scienza e natura. Utilizzo dell'arte come strumento di comunicazione per stimolare l'educazione ambientale`,
   },
   {
     name: 'Giacomo Castana',
@@ -49,6 +50,7 @@ export const guestsInfo: GuestInfo[] = [
     Nel 2021 coordina la prima forma di “<strong>co-progettazione etnobotanica</strong>” rendendo economicamente indipendente la realizzazione di “<strong>Un orto al posto dell’asfalto</strong>” sostituendo 45 metri quadri di cemento con un orto sinergico al centro di Varese.<br/>
     Il progetto “Prospettive Vegetali” capace di azioni plurali in difesa dell’ambiente viene insignito del Premio Internazionale per la Pace “<strong>Book for Peace</strong>”.
     `,
+    theme: `Etnobotanica, la madre di tutte le scienze. Come imparare ad imparare dalla natura`,
   },
   {
     name: 'Marina Berardi',
@@ -63,6 +65,19 @@ export const guestsInfo: GuestInfo[] = [
     Dal 2019 è <strong>Photo Essay Editor di Visual Ethnography</strong>( rivista di Classe A).
     `,
     theme: `Immaginare nuovi orizzonti: Spopolamento, abitare digitale e abitare locale`,
+  },
+  {
+    name: 'Millenium Van',
+    about: `Sono una realtà di <strong>giovani ragazzi</strong> under 30 che opera nel sociale portando <strong>musica libera e spontanea</strong> con un Van della Ducato attrezzato interamente come <strong>palco mobile</strong>.<br/>
+    In questo primo anno di attività hanno lavorato con alcune realtà associative (come il <strong>Circolo degli Artisti</strong> di Torino), affinando il loro impatto sul sociale e definendo il loro obiettivo principale: rendere la musica uno strumento libero, spontaneo e gratuito per portare un'alternativa culturale a situazioni urbane di abbandono e spesso criminalità.<br/>
+    I loro interventi infatti, oltre ad essere interamente gratuiti, hanno l'enorme vantaggio di poter essere portati <strong>ovunque le persone ne abbiano la necessità</strong>.
+    Con la strumentazione presente sul Van e un'autonomia di 6 ore (grazie a un sistema certificato di batterie ricaricabili tramite pannello solare), i musicisti <strong>improvvisano</strong> e coinvolgono il pubblico per rendere lo spettacolo ancora più coinvolgente.<br/>
+    Essendo però un vero e proprio palco mobile, è possibile creare e produrre <strong>qualsiasi tipo di spettacolo</strong> si desideri.<br/>
+    Con la compagnia teatrale del Circolo degli Artisti (con la quale stiamo programmando altri spettacoli) non è mancata infatti l'occasione durante la "<strong>Prima Fiera dell'Arte</strong>" in data 26 Febbraio 2022.<br/>
+    Durante le nostre sessioni di improvvisazione potrete unirvi a noi suonando gli strumenti del Van oppure portando i vostri.<br/>
+    Vi aspettiamo!<br/><br/>
+    #ShakeYourBody
+    `,
   },
 ];
 

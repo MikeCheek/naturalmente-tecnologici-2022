@@ -29,8 +29,24 @@ const Sponsor = () => {
         <a href="https://ristorante3colli.it/" rel="noopener noreferrer" target="_blank">
           <StaticImage src="../../images/sponsor/3colli.jpg" className={styles.logo} alt="3 Colli" width={200} />
         </a>
+        <a href="https://verregioielli.com/" rel="noopener noreferrer" target="_blank">
+          <StaticImage
+            src="../../images/sponsor/verre.jpg"
+            className={styles.logo}
+            alt="Gioielleria Verre"
+            width={200}
+          />
+        </a>
+        <a href="https://biologicavignola.it" rel="noopener noreferrer" target="_blank">
+          <StaticImage
+            src="../../images/sponsor/vignola.jpg"
+            className={styles.logo}
+            alt="Biologica Vignola"
+            width={200}
+          />
+        </a>
       </div>
-      <p>Con il patrocinio di</p>{' '}
+      <p>Con il patrocinio di</p>
       <div className={styles.wrap}>
         <a href="http://www.comune.grassano.mt.it" rel="noopener noreferrer" target="_blank">
           <StaticImage
@@ -49,14 +65,6 @@ const Sponsor = () => {
       </div>
       <p>Si ringrazia anche</p>
       <div className={styles.wrap}>
-        <a href="https://verregioielli.com/" rel="noopener noreferrer" target="_blank">
-          <StaticImage
-            src="../../images/sponsor/verre.png"
-            className={styles.logo}
-            alt="Gioielleria Verre"
-            width={200}
-          />
-        </a>
         <StaticImage
           src="../../images/sponsor/farmacia.png"
           className={styles.logo}
