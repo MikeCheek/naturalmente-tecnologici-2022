@@ -1,3 +1,13 @@
+.discover {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 2px solid var(--nt-blue);
+  margin-bottom: -40px;
+  margin-top: 40px;
+}
+
 .social {
   display: flex;
   flex-direction: row;
@@ -6,7 +16,7 @@
   flex-wrap: wrap;
   gap: 0 20px;
   width: 100%;
-  a {
+  > * {
     &:hover {
       transform: scale(1.05);
     }

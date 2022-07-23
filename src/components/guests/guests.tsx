@@ -2,6 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import GuestCard from '../../atoms/guestCard/guestCard';
 import guestsInfo from '../../utility/guestsInfo';
+import Millennium from '../../assets/millennium.mp4';
 import * as styles from './guests.module.scss';
 
 const Guests = () => {
@@ -10,6 +11,7 @@ const Guests = () => {
   const poki = guestsInfo[2];
   const giacomo = guestsInfo[3];
   const marina = guestsInfo[4];
+  const millennium = guestsInfo[5];
 
   return (
     <div className={styles.guests}>
@@ -52,6 +54,11 @@ const Guests = () => {
           alt={marina.name}
           layout={'constrained'}
         />
+      </GuestCard>
+      <GuestCard name={millennium.name} about={millennium.about} reversed>
+        <video className={styles.image} autoPlay muted loop controls width={200} height={200}>
+          <source src={Millennium} type="video/mp4" />
+        </video>
       </GuestCard>
     </div>
   );
