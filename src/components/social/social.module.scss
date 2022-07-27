@@ -1,11 +1,27 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.reduce {
+  width: 60%;
+}
+
 .discover {
   font-size: 1.3rem;
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 10px;
   border: 2px solid var(--nt-blue);
-  margin-bottom: -40px;
   margin-top: 40px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
 }
 
 .social {

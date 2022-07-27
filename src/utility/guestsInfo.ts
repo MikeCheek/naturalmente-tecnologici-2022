@@ -67,6 +67,19 @@ export const guestsInfo: GuestInfo[] = [
     theme: `Immaginare nuovi orizzonti: Spopolamento, abitare digitale e abitare locale`,
   },
   {
+    name: 'Giancarlo Di Mita',
+    field: 'Museo, tradizioni e territorio',
+    about: `Nato e tutt’ora risiede a San Mauro Forte (MT), è iscritto alla facoltà di Operatore dei Beni culturali di Matera discipline demoetnoantropologiche.<br/>
+    Sin da giovane è attivo nelle associazioni locali, nel 2011 costituisce un <strong>museo degli antichi mestieri e della civiltà contadina</strong> nella sua cittadina.<br/>
+    Nel 2017 fonda insieme ad altri suoi coetanei l’associazione “<strong>Musei, tradizioni e territorio</strong>”, che si occupa della <strong>valorizzazione del patrimonio storico-artistico, architettonico ed agro-forestale</strong> della provincia di Matera e dell’intera Basilicata, della quale è eletto presidente.<br/>
+    Nel 2018 l’associazione da lui presieduta diventa partner del progetto “<strong>Frutti di Casa</strong>” realizzato nell’ambito del Programma di Sviluppo Rurale Regione Basilicata - 2014/2020 in collaborazione con la facoltà di Scienze Agrarie e Forestali e del Dicem (Unibas).<br/>
+    Nel 2019 partecipa alla realizzazione del “<strong>Museo vitivinicolo - La Grotta</strong>” alla riscoperta delle antiche varietà di vite del materano e delle pratiche enologiche di un tempo.<br/>
+    Nel 2020 diventa promotore del progetto di seguito denominato “<strong>Patto delle saragolle</strong>” al fine di reintrodurre il suddetto grano antico nel territorio lucano, in collaborazione con la cooperativa Casa delle AgriCulture di Castiglione d’Otranto (LE) che ha gentilmente donato all’associazione i primi quintali per la semina.<br/>
+    E’ attualmente impegnato in attività artistiche, culturali, antropologiche e sociali.<br/>
+    `,
+    theme: `Il passato che diventa futuro: nuove prospettive agronomiche`,
+  },
+  {
     name: 'Millenium Van',
     about: `Sono una realtà di <strong>giovani ragazzi</strong> under 30 che opera nel sociale portando <strong>musica libera e spontanea</strong> con un Van della Ducato attrezzato interamente come <strong>palco mobile</strong>.<br/>
     In questo primo anno di attività hanno lavorato con alcune realtà associative (come il <strong>Circolo degli Artisti</strong> di Torino), affinando il loro impatto sul sociale e definendo il loro obiettivo principale: rendere la musica uno strumento libero, spontaneo e gratuito per portare un'alternativa culturale a situazioni urbane di abbandono e spesso criminalità.<br/>
