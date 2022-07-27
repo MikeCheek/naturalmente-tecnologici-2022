@@ -27,7 +27,7 @@ const Hero = () => {
         <WhereWhen />
       </div>
 
-      <Social />
+      <Social reduce />
 
       <Section title={sections[0].title} content={sections[0].content} />
 

@@ -11,7 +11,8 @@ const Guests = () => {
   const poki = guestsInfo[2];
   const giacomo = guestsInfo[3];
   const marina = guestsInfo[4];
-  const millennium = guestsInfo[5];
+  const giancarlo = guestsInfo[5];
+  const millennium = guestsInfo[6];
 
   return (
     <div className={styles.guests}>
@@ -55,7 +56,15 @@ const Guests = () => {
           layout={'constrained'}
         />
       </GuestCard>
-      <GuestCard name={millennium.name} about={millennium.about} reversed>
+      <GuestCard name={giancarlo.name} field={giancarlo.field} about={giancarlo.about} theme={giancarlo.theme} reversed>
+        <StaticImage
+          className={styles.image}
+          src="../../images/guests/giancarlo.jpg"
+          alt={giancarlo.name}
+          layout={'constrained'}
+        />
+      </GuestCard>
+      <GuestCard name={millennium.name} about={millennium.about}>
         <video className={styles.image} autoPlay muted loop controls width={200} height={200}>
           <source src={Millennium} type="video/mp4" />
         </video>
