@@ -13,7 +13,7 @@ interface SocialProps {
 const Social = ({ reduce }: SocialProps) => {
   return (
     <div className={`${styles.wrap} ${reduce ? styles.reduce : ''}`}>
-      <p className={styles.discover}>Scopri la nostra associazione</p>
+      <a href="https://syskrack.org" className={styles.discover}>Scopri la nostra associazione</a>
       <div className={styles.social}>
         <a href="https://syskrack.org" target="_blank">
           <Internet fill="var(--nt-blue)" width={60} height={60} />
