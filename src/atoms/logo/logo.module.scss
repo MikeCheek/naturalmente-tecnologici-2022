@@ -20,6 +20,9 @@
   width: auto;
   height: auto;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logoMegaWrap4K {
@@ -34,4 +37,8 @@
   width: 100%;
   height: auto;
   border-radius: 10px;
+  max-width: 300px;
+  @media screen and (min-width: 768px) {
+    max-width: fit-content;
+  }
 }

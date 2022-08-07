@@ -13,21 +13,43 @@ interface SocialProps {
 const Social = ({ reduce }: SocialProps) => {
   return (
     <div className={`${styles.wrap} ${reduce ? styles.reduce : ''}`}>
-      <a href="https://syskrack.org" className={styles.discover}>Scopri la nostra associazione</a>
+      <a href="https://syskrack.org" title="Scopri il nostro sito" target="_blank" className={styles.discover}>
+        Scopri la nostra associazione
+      </a>
       <div className={styles.social}>
-        <a href="https://syskrack.org" target="_blank">
+        <a href="https://syskrack.org" title="Scopri il nostro sito" target="_blank">
           <Internet fill="var(--nt-blue)" width={60} height={60} />
         </a>
-        <a href="https://www.facebook.com/syskrackgiuseppeporsia/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.facebook.com/syskrackgiuseppeporsia/"
+          title="Scopri l'associazione su Facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Facebook fill="var(--nt-blue)" width={60} height={60} />
         </a>
-        <a href="https://www.instagram.com/syskrack_giuseppeporsia/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.instagram.com/syskrack_giuseppeporsia/"
+          title="Scopri l'associazione su Instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Instagram fill="var(--nt-blue)" width={60} height={60} />
         </a>
-        <a href="https://www.linkedin.com/company/syskrack-lab/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/company/syskrack-lab/"
+          title="Scopri l'associazione su Linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Linkedin fill="var(--nt-blue)" width={60} height={60} style={{ borderRadius: '10px' }} />
         </a>
-        <a href="https://t.me/+AYplGqMtentlOTE0" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://t.me/+AYplGqMtentlOTE0"
+          title="Scopri l'associazione su Telegram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Telegram fill="var(--nt-blue)" width={60} height={60} />
         </a>
       </div>
