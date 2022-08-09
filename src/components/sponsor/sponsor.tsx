@@ -60,6 +60,14 @@ const Sponsor = () => {
             width={180}
           />
         </a>
+        <a href="" rel="noopener noreferrer" target="_blank">
+          <StaticImage
+            src="../../images/sponsor/scimpianti.png"
+            className={styles.logo}
+            alt="SC Impianti"
+            width={180}
+          />
+        </a>
       </div>
       <p>Con il patrocinio di</p>
       <div className={styles.wrap}>
