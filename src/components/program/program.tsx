@@ -37,7 +37,7 @@ const Program = () => {
                     </p>
                     {event.type ? <p className={styles.type}>{event.type}</p> : null}
                     <h4>{event.name}</h4>
-                    <p className={styles.location}>{event.location}</p>
+                    {event.location ? <p className={styles.location}>{event.location}</p> : null}
                   </div>
                 );
               })}
