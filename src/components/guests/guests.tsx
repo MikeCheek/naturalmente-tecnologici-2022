@@ -1,5 +1,5 @@
 import { StaticImage } from 'gatsby-plugin-image';
-import React from 'react';
+import React, { useState } from 'react';
 import GuestCard from '../../atoms/guestCard/guestCard';
 import guestsInfo from '../../utility/guestsInfo';
 import Millennium from '../../assets/millennium.mp4';
@@ -13,6 +13,8 @@ const Guests = () => {
   const marina = guestsInfo[4];
   const giancarlo = guestsInfo[5];
   const millennium = guestsInfo[6];
+
+  const [muted, setMuted] = useState<boolean>(true);
 
   return (
     <div className={styles.guests}>
@@ -65,7 +67,17 @@ const Guests = () => {
         />
       </GuestCard>
       <GuestCard name={millennium.name} about={millennium.about}>
-        <video className={styles.image} autoPlay muted loop controls width={200} height={200}>
+        <video
+          className={styles.image}
+          autoPlay
+          muted={muted}
+          loop
+          onClick={() => {
+            setMuted((current) => !current);
+          }}
+          width={200}
+          height={200}
+        >
           <source src={Millennium} type="video/mp4" />
         </video>
       </GuestCard>

@@ -30,7 +30,7 @@ const Program = () => {
                   <div
                     key={key}
                     className={styles.event}
-                    style={event.count ? { height: `${event.count * 140 + 39}px` } : undefined}
+                    style={event.count ? { height: `${event.count == 2 ? 319 : 495}px` } : undefined}
                   >
                     <p className={styles.time}>
                       {event.from} - {event.to}

@@ -12,7 +12,7 @@ export interface Event {
   name: string;
   from: string;
   to: string;
-  location: Location;
+  location?: Location;
   type?: Type;
   count?: number;
 }
@@ -29,21 +29,27 @@ export const program: Day[] = [
     number: 11,
     schedule: [
       {
+        name: 'Colazione',
+        from: '09:00',
+        to: '10:00',
+        location: Location.A,
+      },
+      {
         name: 'Conferenza di benvenuto',
         from: '10:00',
-        to: '12:00',
+        to: '11:00',
         location: Location.A,
         type: Type.F,
       },
       {
-        name: `Esposizioni
-                Rinfresco`,
-        from: '12:00',
+        name: `Visita guidata Municipio`,
+        from: '11:00',
         to: '13:00',
         location: Location.A,
+        type: Type.F,
       },
       {
-        name: 'Pausa pranzo',
+        name: 'Pausa pranzo (Offerto da Parco dei Cigni)',
         from: '13:00',
         to: '15:00',
         location: Location.A,
@@ -74,6 +80,7 @@ export const program: Day[] = [
         from: '20:00',
         to: ' late',
         location: Location.C,
+        count: 3,
       },
     ],
   },
@@ -81,6 +88,12 @@ export const program: Day[] = [
     day: 'Venerdì',
     number: 12,
     schedule: [
+      {
+        name: 'Colazione',
+        from: '08:30',
+        to: '10:00',
+        location: Location.C,
+      },
       {
         name: 'Laboratori*',
         from: '10:00',
@@ -90,20 +103,20 @@ export const program: Day[] = [
         count: 2,
       },
       {
-        name: 'Pausa pranzo',
+        name: 'Pausa pranzo al Confino',
         from: '13:00',
         to: '15:00',
         location: Location.C,
       },
       {
-        name: 'Conferenza Prospettive Vegetali',
+        name: 'Conferenza Emanuele Poki',
         from: '15:00',
         to: '16:30',
         location: Location.A,
         type: Type.F,
       },
       {
-        name: 'Conferenza Emanuele Poki',
+        name: 'Conferenza Prospettive Vegetali',
         from: '16:30',
         to: '18:00',
         location: Location.A,
@@ -121,6 +134,7 @@ export const program: Day[] = [
         from: '20:00',
         to: ' late',
         location: Location.C,
+        count: 3,
       },
     ],
   },
@@ -128,6 +142,12 @@ export const program: Day[] = [
     day: 'Sabato',
     number: 13,
     schedule: [
+      {
+        name: 'Colazione',
+        from: '08:30',
+        to: '10:00',
+        location: Location.C,
+      },
       {
         name: 'Laboratori*',
         from: '10:00',
@@ -137,7 +157,7 @@ export const program: Day[] = [
         count: 2,
       },
       {
-        name: 'Pausa pranzo',
+        name: 'Pausa pranzo al Gabbiano',
         from: '13:00',
         to: '15:00',
         location: Location.C,
@@ -165,15 +185,20 @@ export const program: Day[] = [
       },
       {
         name: 'Esposizioni, Networking e Jam Session',
-        from: '18:00',
-        to: '19:00',
+        from: '19:00',
+        to: '21:00',
         location: Location.A,
+        count: 2,
       },
       {
-        name: 'Attività al camping',
-        from: '20:00',
+        name: 'Mega grigliata',
+        from: '21:00',
+        to: '22:00',
+      },
+      {
+        name: 'DJ Set & Bisboccia',
+        from: '22:00',
         to: ' late',
-        location: Location.C,
       },
     ],
   },
