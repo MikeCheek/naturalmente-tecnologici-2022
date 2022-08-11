@@ -22,7 +22,7 @@ const Hero = () => {
     <div className={styles.nt}>
       <div className={styles.first}>
         <Logo />
-        {timer ? <Timer shutOffTimer={() => setTimer(false)} /> : <></>}
+        {/*timer ? <Timer shutOffTimer={() => setTimer(false)} /> : <></>*/}
         <Button text={formText} href={formLink} />
         <WhereWhen />
       </div>
