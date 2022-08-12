@@ -62,9 +62,9 @@ export const program: Day[] = [
         type: Type.F,
       },
       {
-        name: 'Esposizioni,
+        name: `Esposizioni,
                Jam Session
-               Millennium Van',
+               Millennium Van`,
         from: '18:00',
         to: '20:00',
         location: Location.A,
@@ -105,9 +105,9 @@ export const program: Day[] = [
         type: Type.F,
       },
       {
-        name: 'Esposizioni,
+        name: `Esposizioni,
                Jam Session
-               Millennium Van',
+               Millennium Van`,
         from: '18:00',
         to: '20:00',
         location: Location.A,
@@ -155,9 +155,9 @@ export const program: Day[] = [
         type: Type.F,
       },
       {
-        name: 'Esposizioni,
+        name: `Esposizioni,
                Jam Session
-               Millennium Van',
+               Millennium Van`,
         from: '18:00',
         to: '19:00',
         location: Location.A,
