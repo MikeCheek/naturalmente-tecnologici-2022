@@ -31,13 +31,13 @@ export const program: Day[] = [
       {
         name: 'Conferenza di benvenuto',
         from: '10:00',
-        to: '12:00',
+        to: '11:00',
         location: Location.A,
         type: Type.F,
       },
       {
         name: `Scopri Grassano`,
-        from: '12:00',
+        from: '11:00',
         to: '13:00',
         location: Location.A,
       },
@@ -63,7 +63,7 @@ export const program: Day[] = [
       },
       {
         name: `Esposizioni,
-               Jam Session
+               Jam Session, 
                Millennium Van`,
         from: '18:00',
         to: '20:00',
@@ -106,7 +106,7 @@ export const program: Day[] = [
       },
       {
         name: `Esposizioni,
-               Jam Session
+               Jam Session, 
                Millennium Van`,
         from: '18:00',
         to: '20:00',
@@ -158,8 +158,8 @@ export const program: Day[] = [
         name: `Esposizioni,
                Jam Session
                Millennium Van`,
-        from: '18:00',
-        to: '19:00',
+        from: '19:00',
+        to: '20:00',
         location: Location.A,
       },
     ],
