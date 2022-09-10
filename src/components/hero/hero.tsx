@@ -16,7 +16,7 @@ import Social from '../social/social';
 const Hero = () => {
   const [timer, setTimer] = useState<boolean>(true);
   const buttonLink = 'https://drive.google.com/drive/folders/1VvckPrYvLbHZmcW-NyCWzkoOKu8n-PFO?usp=sharing';
-  const buttonText = 'Foto dell'evento';
+  const buttonText = "Foto dell'evento";
 
   return (
     <div className={styles.nt}>
