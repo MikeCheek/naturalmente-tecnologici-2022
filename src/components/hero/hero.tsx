@@ -15,6 +15,8 @@ import Social from '../social/social';
 
 const Hero = () => {
   const [timer, setTimer] = useState<boolean>(true);
+  const formLink = 'https://bit.ly/3nGnUBU';
+  const formText = 'Iscriviti al Camping';
   const buttonLink = 'https://drive.google.com/drive/folders/1VvckPrYvLbHZmcW-NyCWzkoOKu8n-PFO?usp=sharing';
   const buttonText = "Foto dell'evento";
 
