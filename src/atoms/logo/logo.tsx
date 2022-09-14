@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import LogoSvg from '../../assets/logo.svg';
 import * as styles from './logo.module.scss';
+import LogoSvg from '../../assets/logo.svg';
 
 const Logo = () => {
   const logoRef = useRef<HTMLDivElement>(null);

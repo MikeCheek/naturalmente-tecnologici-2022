@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Logo from '../../atoms/logo/logo';
+import Social from '../social/social';
 import Section from '../section/section';
-import Timer from '../timer/timer';
+// import Timer from '../timer/timer';
 import * as styles from './hero.module.scss';
 import { sections } from '../../utility/sections';
 import WhereWhen from '../whereWhen/whereWhen';
-import Slider from '../slider/slider';
 import Button from '../../atoms/button/button';
 import Guests from '../guests/guests';
 import Program from '../program/program';
 import Moderators from '../moderators/moderators';
 import Sponsor from '../sponsor/sponsor';
-import Social from '../social/social';
+import Gallery from '../../atoms/gallery/gallery';
 
 const Hero = () => {
-  const [timer, setTimer] = useState<boolean>(true);
+  // const [timer, setTimer] = useState<boolean>(true);
   const formLink = 'https://bit.ly/3nGnUBU';
   const formText = 'Iscriviti al Camping';
-  const buttonLink = 'https://drive.google.com/drive/folders/1VvckPrYvLbHZmcW-NyCWzkoOKu8n-PFO?usp=sharing';
+  const buttonLink = '#gallery';
   const buttonText = "Foto dell'evento";
 
   return (
@@ -50,8 +50,8 @@ const Hero = () => {
         <Program />
       </Section>
 
-      <Section title={'<h2>Galleria</h2>'} appearContent={false}>
-        <Slider />
+      <Section title={'<h2>Foto evento</h2>'} appearContent={false} id="gallery">
+        <Gallery />
       </Section>
 
       <Section title={'<h2>Sponsor</h2>'} appearContent={false}>

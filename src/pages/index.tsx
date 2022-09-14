@@ -7,6 +7,7 @@ import Layout from '../components/layout/layout';
 
 const IndexPage = () => {
   const [crushed, setCrushed] = useState<number>(0);
+
   const handleClick = () => {
     setCrushed(crushed + 1);
   };
@@ -30,8 +31,8 @@ Aiutami a schiacciarli e ti dirò quanti ne hai presi <3`,
         description="L’evento si propone di essere occasione di ritrovo della community di Syskrack nonché strumento di disseminazione culturale sul territorio."
       />
       <Layout>
-        <Hero />
         <Bugs handleClick={handleClick} />
+        <Hero />
       </Layout>
     </>
   );
