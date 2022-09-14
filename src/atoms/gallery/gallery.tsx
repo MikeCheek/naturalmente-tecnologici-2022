@@ -10,18 +10,7 @@ const Gallery = () => {
   const isBrowser = typeof window !== 'undefined';
 
   const [width, setWidth] = useState<number>(isBrowser ? window.innerWidth : 0);
-
-  const updateWidth = () => {
-    setWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    if (!isBrowser) return;
-
-    window.addEventListener('resize', updateWidth);
-
-    return () => window.removeEventListener('resize', () => {});
-  }, []);
+  const [remainings, setRemainings] = useState<number>(0);
 
   const data = useStaticQuery(graphql`
     query AssetsPhotos {
@@ -37,6 +26,27 @@ const Gallery = () => {
       }
     }
   `);
+
+  const updateWidth = () => {
+    setWidth(window.innerWidth);
+    calcRemainings();
+  };
+
+  useEffect(() => {
+    if (!isBrowser) return;
+
+    window.addEventListener('resize', updateWidth);
+
+    return () => window.removeEventListener('resize', () => {});
+  }, []);
+
+  const calcRemainings = () => {
+    const col = (width / 300) | 0;
+    const row = 3;
+    const grid = row * col;
+    const spare = 45 % grid;
+    setRemainings(spare == 0 ? 0 : grid - spare);
+  };
 
   return (
     <div className={styles.gallery}>
@@ -72,6 +82,17 @@ const Gallery = () => {
             );
           }
         )}
+        {new Array(remainings).fill(0).map((_entry, key) => {
+          return (
+            <Carousel.Item key={key}>
+              <div className={styles.fakePhoto} style={{ opacity: 1 - key / 3 }}>
+                {/* <a href="https://drive.google.com/drive/folders/1VvckPrYvLbHZmcW-NyCWzkoOKu8n-PFO?usp=sharing">
+                  Guarda tutte le foto
+                </a> */}
+              </div>
+            </Carousel.Item>
+          );
+        })}
       </Carousel>
       <span>
         <p>Tutte le altre foto sono disponibili sul Drive</p>

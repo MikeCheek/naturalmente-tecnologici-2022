@@ -46,12 +46,13 @@ const Hero = () => {
       <Section title={'<h2>Moderatori evento</h2>'} appearContent={false}>
         <Moderators />
       </Section>
-      <Section title={'<h2>Programma evento</h2>'} id={'programma'} appearContent={false}>
-        <Program />
-      </Section>
 
       <Section title={'<h2>Foto evento</h2>'} appearContent={false} id="gallery">
         <Gallery />
+      </Section>
+
+      <Section title={'<h2>Programma evento</h2>'} id={'programma'} appearContent={false}>
+        <Program />
       </Section>
 
       <Section title={'<h2>Sponsor</h2>'} appearContent={false}>
