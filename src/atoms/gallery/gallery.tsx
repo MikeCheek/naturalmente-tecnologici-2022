@@ -1,18 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import * as styles from './gallery.module.scss';
 import { graphql, useStaticQuery } from 'gatsby';
-import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Carousel from 'react-grid-carousel';
 import Arrow from '../arrow/arrow';
 import Button from '../button/button';
+import { Data, Edge } from './gallery.types';
 
 const Gallery = () => {
-  const isBrowser = typeof window !== 'undefined';
-
-  const [width, setWidth] = useState<number>(isBrowser ? window.innerWidth : 0);
-  const [remainings, setRemainings] = useState<number>(0);
-
-  const data = useStaticQuery(graphql`
+  const data: Data = useStaticQuery(graphql`
     query AssetsPhotos {
       allFile(filter: { extension: { regex: "/(jpg)|(jpeg)|(png)/" }, dir: { regex: "/images/gallery/" } }) {
         edges {
@@ -26,6 +22,11 @@ const Gallery = () => {
       }
     }
   `);
+
+  const isBrowser = typeof window !== 'undefined';
+
+  const [width, setWidth] = useState<number>(isBrowser ? window.innerWidth : 0);
+  const [remainings, setRemainings] = useState<number>(0);
 
   const updateWidth = () => {
     setWidth(window.innerWidth);
@@ -69,19 +70,18 @@ const Gallery = () => {
         arrowLeft={<Arrow left />}
         arrowRight={<Arrow />}
       >
-        {data.allFile.edges.map(
-          (edge: { node: { childImageSharp: { gatsbyImageData: IGatsbyImageData } } }, key: number) => {
-            return (
-              <Carousel.Item key={key}>
-                <GatsbyImage
-                  image={edge.node.childImageSharp.gatsbyImageData}
-                  alt={'IMG' + key}
-                  objectPosition={'center top'}
-                />
-              </Carousel.Item>
-            );
-          }
-        )}
+        {data.allFile!.edges.map((edge: Edge, key: number) => {
+          return (
+            <Carousel.Item key={key}>
+              <GatsbyImage
+                image={edge.node.childImageSharp.gatsbyImageData}
+                alt={'IMG' + key}
+                objectPosition={'center top'}
+                onError={() => {}}
+              />
+            </Carousel.Item>
+          );
+        })}
         {new Array(remainings).fill(0).map((_entry, key) => {
           return (
             <Carousel.Item key={key}>
@@ -95,7 +95,7 @@ const Gallery = () => {
         })}
       </Carousel>
       <span>
-        <p>Tutte le altre foto sono disponibili sul Drive</p>
+        <p>Tutte le foto sono disponibili sul Drive</p>
         <br />
         <Button
           href="https://drive.google.com/drive/folders/1VvckPrYvLbHZmcW-NyCWzkoOKu8n-PFO?usp=sharing"

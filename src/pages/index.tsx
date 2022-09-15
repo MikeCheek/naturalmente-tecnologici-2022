@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import SEO from '../atoms/seo/seo';
+import '../styles/globals.scss';
 import Bugs from '../components/bugs/bugs';
 import Hero from '../components/hero/hero';
-import '../styles/globals.scss';
 import Layout from '../components/layout/layout';
+import SEO from '../atoms/seo/seo';
 
 const IndexPage = () => {
   const [crushed, setCrushed] = useState<number>(0);

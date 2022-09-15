@@ -1,17 +1,17 @@
-import React from 'react';
-import Logo from '../../atoms/logo/logo';
-import Social from '../social/social';
-import Section from '../section/section';
-// import Timer from '../timer/timer';
+import React, { lazy, Suspense } from 'react';
 import * as styles from './hero.module.scss';
-import { sections } from '../../utility/sections';
-import WhereWhen from '../whereWhen/whereWhen';
 import Button from '../../atoms/button/button';
+// import Gallery from '../../atoms/gallery/gallery';
 import Guests from '../guests/guests';
-import Program from '../program/program';
+import Logo from '../../atoms/logo/logo';
 import Moderators from '../moderators/moderators';
+import Program from '../program/program';
+// import Timer from '../timer/timer';
+import Section from '../section/section';
+import Social from '../social/social';
 import Sponsor from '../sponsor/sponsor';
-import Gallery from '../../atoms/gallery/gallery';
+import WhereWhen from '../whereWhen/whereWhen';
+import { sections } from '../../utility/sections';
 
 const Hero = () => {
   // const [timer, setTimer] = useState<boolean>(true);
@@ -19,6 +19,9 @@ const Hero = () => {
   const formText = 'Iscriviti al Camping';
   const buttonLink = '#gallery';
   const buttonText = "Foto dell'evento";
+  const isBrowser = typeof window !== 'undefined';
+
+  const Gallery = lazy(() => import('../../atoms/gallery/gallery'));
 
   return (
     <div className={styles.nt}>
@@ -48,7 +51,11 @@ const Hero = () => {
       </Section>
 
       <Section title={'<h2>Foto evento</h2>'} appearContent={false} id="gallery">
-        <Gallery />
+        {isBrowser && (
+          <Suspense fallback={null}>
+            <Gallery />
+          </Suspense>
+        )}
       </Section>
 
       <Section title={'<h2>Programma evento</h2>'} id={'programma'} appearContent={false}>

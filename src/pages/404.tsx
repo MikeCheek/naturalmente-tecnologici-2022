@@ -1,12 +1,10 @@
 import React from 'react';
-import Greenwood from '../components/greenwood/greenwood';
-import Logo from '../atoms/logo/logo';
-import SEO from '../atoms/seo/seo';
 import { Link } from 'gatsby';
 import '../styles/globals.scss';
+import Logo from '../atoms/logo/logo';
+import SEO from '../atoms/seo/seo';
 import Layout from '../components/layout/layout';
 import * as styled from '../styles/styled.module.scss';
-import AnimatedText from '../atoms/animatedText/animatedText';
 
 const NotFoundPage = () => {
   const pageStyle: React.CSSProperties = {

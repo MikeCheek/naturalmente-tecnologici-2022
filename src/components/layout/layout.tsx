@@ -1,7 +1,7 @@
 import React from 'react';
-import Syskrack from '../../atoms/syskrack/syskrack';
 import Footer from '../footer/footer';
 import Greenwood from '../greenwood/greenwood';
+import Syskrack from '../../atoms/syskrack/syskrack';
 import * as styles from './layout.module.scss';
 
 interface LayoutProps {
