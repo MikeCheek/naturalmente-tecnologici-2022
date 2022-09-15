@@ -15,8 +15,8 @@ import { sections } from '../../utility/sections';
 
 const Hero = () => {
   // const [timer, setTimer] = useState<boolean>(true);
-  const formLink = 'https://bit.ly/3nGnUBU';
-  const formText = 'Iscriviti al Camping';
+  // const formLink = 'https://bit.ly/3nGnUBU';
+  // const formText = 'Iscriviti al Camping';
   const buttonLink = '#gallery';
   const buttonText = "Foto dell'evento";
   const isBrowser = typeof window !== 'undefined';
@@ -42,7 +42,7 @@ const Hero = () => {
         text="Camping Location"
         href={`https://www.google.com/maps/place/40%C2%B037'56.6%22N+16%C2%B018'31.7%22E`}
       />
-      <Button text={formText} href={formLink} />
+      {/* <Button text={formText} href={formLink} /> */}
       <Section title={'<h2>Ospiti evento</h2>'} appearContent={false}>
         <Guests />
       </Section>
