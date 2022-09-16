@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import * as styles from './hero.module.scss';
 import Button from '../../atoms/button/button';
-// import Gallery from '../../atoms/gallery/gallery';
 import Guests from '../guests/guests';
 import Logo from '../../atoms/logo/logo';
 import Moderators from '../moderators/moderators';
@@ -12,6 +11,7 @@ import Social from '../social/social';
 import Sponsor from '../sponsor/sponsor';
 import WhereWhen from '../whereWhen/whereWhen';
 import { sections } from '../../utility/sections';
+import Loading from '../../atoms/loading/loading';
 
 const Hero = () => {
   // const [timer, setTimer] = useState<boolean>(true);
@@ -46,7 +46,7 @@ const Hero = () => {
 
       <Section title={'<h2>Foto evento</h2>'} appearContent={false} id="gallery">
         {isBrowser && (
-          <Suspense fallback={null}>
+          <Suspense fallback={<Loading width={200} height={200} />}>
             <Gallery />
           </Suspense>
         )}

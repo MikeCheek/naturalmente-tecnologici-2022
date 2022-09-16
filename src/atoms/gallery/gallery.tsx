@@ -42,7 +42,7 @@ const Gallery = () => {
   }, []);
 
   useEffect(() => {
-    setColumns((width / 400) | 0);
+    setColumns((width / 470) | 0);
   }, [width]);
 
   useEffect(() => {
@@ -54,7 +54,6 @@ const Gallery = () => {
     const row = 2;
     const grid = row * col;
     const spare = 45 % grid;
-    console.log(col, row, grid, spare);
     setRemainings(spare == 0 ? 0 : grid - spare);
   };
 
@@ -91,9 +90,11 @@ const Gallery = () => {
             return (
               <Carousel.Item key={key}>
                 <div className={styles.fakePhoto} style={{ opacity: 1 - key / 3 }}>
-                  {/* <a href="https://drive.google.com/drive/folders/1VvckPrYvLbHZmcW-NyCWzkoOKu8n-PFO?usp=sharing">
-                  Guarda tutte le foto
-                </a> */}
+                  {key == 0 ? (
+                    <a href="https://drive.google.com/drive/folders/1VvckPrYvLbHZmcW-NyCWzkoOKu8n-PFO?usp=sharing">
+                      Guarda tutte le foto sul Drive
+                    </a>
+                  ) : null}
                 </div>
               </Carousel.Item>
             );
