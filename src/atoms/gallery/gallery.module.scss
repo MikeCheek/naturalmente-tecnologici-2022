@@ -6,15 +6,19 @@
   row-gap: 40px;
 
   img {
-    width: 100px !important;
+    // width: 100px !important;
     border-radius: 3px;
   }
 
-  @media screen and (min-width: 768px) {
-    img {
-      width: 200px !important;
-    }
-  }
+  // @media screen and (min-width: 768px) {
+  //   img {
+  //     width: 200px !important;
+  //   }
+  // }
+}
+
+.carousel {
+  min-height: 100px;
 }
 
 .fakePhoto {
@@ -22,7 +26,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 100px;
+  width: 300px;
   margin: auto;
   margin-top: auto;
   margin-bottom: auto;
@@ -31,14 +35,11 @@
   text-transform: uppercase;
   font-weight: bolder;
 
-  background-color: var(--nt-transparent-blue);
+  background-color: var(--nt-transparent-blue-black);
 
   a {
     text-decoration: none;
     color: var(--nt-blue);
     padding: 20px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 200px;
   }
 }
