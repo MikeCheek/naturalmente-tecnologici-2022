@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import SEO from '../atoms/seo/seo';
+import '../styles/globals.scss';
 import Bugs from '../components/bugs/bugs';
 import Hero from '../components/hero/hero';
-import '../styles/globals.scss';
 import Layout from '../components/layout/layout';
+import SEO from '../atoms/seo/seo';
 
 const IndexPage = () => {
   const [crushed, setCrushed] = useState<number>(0);
+
   const handleClick = () => {
     setCrushed(crushed + 1);
   };
@@ -30,8 +31,8 @@ Aiutami a schiacciarli e ti dirò quanti ne hai presi <3`,
         description="L’evento si propone di essere occasione di ritrovo della community di Syskrack nonché strumento di disseminazione culturale sul territorio."
       />
       <Layout>
-        <Hero />
         <Bugs handleClick={handleClick} />
+        <Hero />
       </Layout>
     </>
   );

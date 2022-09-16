@@ -1,20 +1,16 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-//import { useStaticQuery, graphql } from "gatsby"
-import { SEOProps /*QueryTypes*/ } from './seo.types';
+import { SEOProps } from './seo.types';
 
-const SEO = ({ description = '', lang = 'en', meta = [], title }: SEOProps): JSX.Element => {
-  //const { site } = useStaticQuery<QueryTypes>(SEOStaticQuery)
-
-  const metaDescription: string = description; //|| site.siteMetadata.description
-  //const defaultTitle = site.siteMetadata?.title
+const SEO = ({ description = '', lang = 'it', meta = [], title }: SEOProps): JSX.Element => {
+  const metaDescription: string = description;
   const defaultTitle: string = 'Syskrack';
   const image = 'https://nt.syskrack.org/logo-og.jpg';
 
   return (
     <Helmet
       htmlAttributes={{
-        lang: 'it',
+        lang: lang,
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s - ${defaultTitle}` : undefined}
@@ -99,20 +95,5 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: SEOProps): JSX
     </Helmet>
   );
 };
-
-/*
-// Queries
-const SEOStaticQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-        description
-        author
-      }
-    }
-  }
-`
-*/
 
 export default SEO;

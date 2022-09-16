@@ -8,7 +8,13 @@ interface ButtonProps {
 
 const Button = ({ href, text }: ButtonProps) => {
   return (
-    <a className={styles.button} href={href} title={text} rel="noopener noreferrer" target={'_blank'}>
+    <a
+      className={styles.button}
+      href={href}
+      title={text}
+      rel="noopener noreferrer"
+      target={href[0] == '#' ? '_self' : '_blank'}
+    >
       {text}
     </a>
   );

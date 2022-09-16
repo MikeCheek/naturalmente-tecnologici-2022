@@ -1,21 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Paragraph from '../../atoms/paragraph/paragraph';
 import program from '../../utility/program';
 import * as styles from './program.module.scss';
 
 const Program = () => {
-  const eventStarted = () => {
-    const now = new Date();
-    const eventStart = new Date(2022, 7, 11);
-    return now >= eventStart;
-  };
-
-  useEffect(() => {
-    if (eventStarted()) {
-      console.log('event started');
-    }
-  }, []);
-
   return (
     <>
       <div className={styles.program}>
