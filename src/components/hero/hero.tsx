@@ -28,6 +28,7 @@ const Hero = () => {
       <div className={styles.first}>
         <Logo />
         {/*timer ? <Timer shutOffTimer={() => setTimer(false)} /> : <></>*/}
+        {/*@ts-ignore*/}
         <Link className={styles.link} to="/articoli">
           {buttonText}
         </Link>
