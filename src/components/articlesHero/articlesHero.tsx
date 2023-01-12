@@ -6,7 +6,7 @@ const ArticlesHero = () => {
   return (
     <div className={styles.wrap}>
       <h1 className={styles.title}>Parlano di noi!</h1>
-      <p>In questa sezione sono presenti gli articoli che parlano del nostro evento!</p>
+      <p>In questa sezione sono presenti gli articoli che parlano di Naturalmente Tecnologici 2022</p>
       <ArticleLinks />
     </div>
   );

@@ -18,7 +18,7 @@ const Hero = () => {
   // const [timer, setTimer] = useState<boolean>(true);
   // const formLink = 'https://bit.ly/3nGnUBU';
   // const formText = 'Iscriviti al Camping';
-  const buttonText = 'Guarda gli articoli su NT!';
+  const buttonText = 'Guarda gli articoli dove parlano di noi!';
   const isBrowser = typeof window !== 'undefined';
 
   const Gallery = lazy(() => import('../../atoms/gallery/gallery'));
