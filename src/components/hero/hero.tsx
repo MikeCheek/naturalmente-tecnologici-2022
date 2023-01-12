@@ -12,13 +12,13 @@ import Sponsor from '../sponsor/sponsor';
 import WhereWhen from '../whereWhen/whereWhen';
 import { sections } from '../../utility/sections';
 import Loading from '../../atoms/loading/loading';
+import { Link } from 'gatsby';
 
 const Hero = () => {
   // const [timer, setTimer] = useState<boolean>(true);
   // const formLink = 'https://bit.ly/3nGnUBU';
   // const formText = 'Iscriviti al Camping';
-  const buttonLink = '#gallery';
-  const buttonText = "Foto dell'evento";
+  const buttonText = 'Guarda gli articoli su NT!';
   const isBrowser = typeof window !== 'undefined';
 
   const Gallery = lazy(() => import('../../atoms/gallery/gallery'));
@@ -28,7 +28,9 @@ const Hero = () => {
       <div className={styles.first}>
         <Logo />
         {/*timer ? <Timer shutOffTimer={() => setTimer(false)} /> : <></>*/}
-        <Button text={buttonText} href={buttonLink} />
+        <Link className={styles.link} to="/articoli">
+          {buttonText}
+        </Link>
         <WhereWhen />
       </div>
 
