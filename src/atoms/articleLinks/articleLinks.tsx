@@ -21,18 +21,20 @@ const ArticleLinks = ({ data }: { data: Data }) => {
             <em>{reduce(link.description)}</em>
             {data.allFile && (data.allFile.edges[key] || data.allFile.edges[key + 5]) ? (
               <>
-                <GatsbyImage
-                  image={data.allFile.edges[key].node.childImageSharp.gatsbyImageData}
-                  className={styles.image}
-                  alt={'IMG ' + link.title}
-                  onError={() => {}}
-                />
-                <GatsbyImage
-                  image={data.allFile.edges[key + 5].node.childImageSharp.gatsbyImageData}
-                  className={styles.imageMobile}
-                  alt={'IMG ' + link.title}
-                  onError={() => {}}
-                />
+                <div className={styles.image}>
+                  <GatsbyImage
+                    image={data.allFile.edges[key].node.childImageSharp.gatsbyImageData}
+                    alt={'IMG-' + link.title}
+                    onError={() => {}}
+                  />
+                </div>
+                <div className={styles.imageMobile}>
+                  <GatsbyImage
+                    image={data.allFile.edges[key + 5].node.childImageSharp.gatsbyImageData}
+                    alt={'IMG-M-' + link.title}
+                    onError={() => {}}
+                  />
+                </div>
               </>
             ) : (
               <></>
