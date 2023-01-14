@@ -9,7 +9,7 @@ const Footer = () => {
       <div className={styles.footer}>
         <span>
           Developed by{' '}
-          <a href="https://michelepulvirenti.vercel.app/?ref=nt" title="Michele Pulvirenti" target="_blank" rel="noopener noreferrer">
+          <a href="https://michelepulvirenti.vercel.app/?r=nt" title="Michele Pulvirenti" target="_blank" rel="noopener noreferrer">
             Michele Pulvirenti
           </a>
         </span>
