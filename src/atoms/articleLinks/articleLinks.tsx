@@ -5,10 +5,6 @@ import { Data } from '../gallery/gallery.types';
 import * as styles from './articleLinks.module.scss';
 
 const ArticleLinks = ({ data }: { data: Data }) => {
-  useEffect(() => {
-    console.table(data.allFile?.edges);
-  }, []);
-
   const reduce = (text: string) => {
     const max = 200;
     return text.length > max ? text.substring(0, max - 3) + '...' : text;
@@ -23,13 +19,21 @@ const ArticleLinks = ({ data }: { data: Data }) => {
               {link.title}
             </a>
             <em>{reduce(link.description)}</em>
-            {data.allFile && data.allFile.edges[key] ? (
-              <GatsbyImage
-                image={data.allFile.edges[key].node.childImageSharp.gatsbyImageData}
-                className={styles.image}
-                alt={'IMG ' + link.title}
-                onError={() => {}}
-              />
+            {data.allFile && (data.allFile.edges[key] || data.allFile.edges[key + 5]) ? (
+              <>
+                <GatsbyImage
+                  image={data.allFile.edges[key].node.childImageSharp.gatsbyImageData}
+                  className={styles.image}
+                  alt={'IMG ' + link.title}
+                  onError={() => {}}
+                />
+                <GatsbyImage
+                  image={data.allFile.edges[key + 5].node.childImageSharp.gatsbyImageData}
+                  className={styles.imageMobile}
+                  alt={'IMG ' + link.title}
+                  onError={() => {}}
+                />
+              </>
             ) : (
               <></>
             )}
