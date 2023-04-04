@@ -1,16 +1,16 @@
 .link {
+  color: var(--nt-white);
+  transition: color 1s ease;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: var(--nt-blue);
+  z-index: 10;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &a {
     color: var(--nt-white);
-    transition: color 1s ease;
     text-decoration: none;
-    border-radius: 20px;
-    padding: 10px;
-    background-color: var(--nt-blue);
-    
-    &:hover {
-        transform: scale(1.05);
-    }
-    &a {
-        color: var(--nt-white);
-        text-decoration: none;
-    }
+  }
 }

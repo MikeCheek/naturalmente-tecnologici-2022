@@ -38,7 +38,9 @@ const Gallery = () => {
 
     window.addEventListener('resize', updateWidth);
 
-    return () => window.removeEventListener('resize', () => {});
+    return () => {
+      window.removeEventListener('resize', () => {});
+    };
   }, []);
 
   useEffect(() => {

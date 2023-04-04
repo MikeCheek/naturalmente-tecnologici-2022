@@ -15,7 +15,7 @@ const Syskrack = () => {
         <StaticImage
           src="../../images/compactSyskrack.png"
           alt="Logo Syskrack"
-          placeholder="tracedSVG"
+          placeholder="blurred"
           className={styles.syskrack}
           width={60}
           height={60}
@@ -32,7 +32,7 @@ const Syskrack = () => {
         <StaticImage
           src="../../images/compactSyskrack.png"
           alt="Logo Syskrack"
-          placeholder="tracedSVG"
+          placeholder="blurred"
           className={styles.syskrack}
           width={90}
           height={90}

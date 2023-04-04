@@ -28,7 +28,7 @@ Aiutami a schiacciarli e ti dirò quanti ne hai presi <3`,
     <>
       <SEO
         title="Naturalmente Tecnologici"
-        description="L’evento si propone di essere occasione di ritrovo della community di Syskrack nonché strumento di disseminazione culturale sul territorio."
+        description="L'evento si propone di essere occasione di ritrovo della community di Syskrack nonché strumento di disseminazione culturale sul territorio."
       />
       <Layout>
         <Bugs handleClick={handleClick} />
