@@ -2,8 +2,8 @@ module.exports = {
   pathPrefix: '/',
   siteMetadata: {
     title: `Naturalmente Tecnologici`,
-    siteUrl: 'https://nt.syskrack.org',
-    url: 'https://nt.syskrack.org',
+    siteUrl: 'https://nt22.syskrack.org',
+    url: 'https://nt22.syskrack.org',
   },
   //   flags: {
   //     DEV_SSR: true
@@ -33,8 +33,8 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
-      host: 'https://nt.syskrack.org',
-      sitemap: 'https://nt.syskrack.org/sitemap/sitemap-index.xml',
+      host: 'https://nt22.syskrack.org',
+      sitemap: 'https://nt22.syskrack.org/sitemap/sitemap-index.xml',
       policy: [{ userAgent: '*', allow: '/' }],
     },
     'gatsby-plugin-sharp',
@@ -63,7 +63,7 @@ module.exports = {
         RewriteBase: '/',
         https: true,
         SymLinksIfOwnerMatch: true,
-        host: 'nt.syskrack.org', // if 'www' is set to 'false', be sure to also remove it here!
+        host: 'nt22.syskrack.org', // if 'www' is set to 'false', be sure to also remove it here!
         ErrorDocument: `
                 ErrorDocument 404 /404.html
               `,
@@ -80,7 +80,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://nt.syskrack.org`,
+        siteUrl: `https://nt22.syskrack.org`,
         stripQueryString: true,
       },
     },

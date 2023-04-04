@@ -1,7 +1,7 @@
-# Naturalmente Tecnologici <img src="https://nt.syskrack.org/favicon.ico" width="30" height="30" alt="NT logo" />
+# Naturalmente Tecnologici <img src="https://nt22.syskrack.org/favicon.ico" width="30" height="30" alt="NT logo" />
 
-  <a href="http://nt.syskrack.org">
-    <img alt="Naturalmente Tecnologici" src="https://img.shields.io/website?down_color=Red&down_message=Off&label=NT Website&style=for-the-badge&up_color=blueviolet&up_message=On&url=http%3A%2F%2Fnt.syskrack.org" />
+  <a href="http://nt22.syskrack.org">
+    <img alt="Naturalmente Tecnologici" src="https://img.shields.io/website?down_color=Red&down_message=Off&label=NT Website&style=for-the-badge&up_color=blueviolet&up_message=On&url=http%3A%2F%2Fnt22.syskrack.org" />
   </a>
   
   <br/>
@@ -18,8 +18,6 @@
 
 </div>
 
-
 #
-
 
 Sito realizzato per l'evento Naturalmente Tecnologici Grassano (MT)

@@ -5,7 +5,7 @@ import { SEOProps } from './seo.types';
 const SEO = ({ description = '', lang = 'it', meta = [], title }: SEOProps): JSX.Element => {
   const metaDescription: string = description;
   const defaultTitle: string = 'Syskrack';
-  const image = 'https://nt.syskrack.org/logo-og.jpg';
+  const image = 'https://nt22.syskrack.org/logo-og.jpg';
 
   return (
     <Helmet
@@ -53,7 +53,7 @@ const SEO = ({ description = '', lang = 'it', meta = [], title }: SEOProps): JSX
         },
         {
           property: `og:url`,
-          content: `https://nt.syskrack.org`,
+          content: `https://nt22.syskrack.org`,
         },
         {
           property: `og:site_name`,
