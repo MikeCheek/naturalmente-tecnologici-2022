@@ -18,7 +18,7 @@ const Hero = () => {
   // const [timer, setTimer] = useState<boolean>(true);
   // const formLink = 'https://bit.ly/3nGnUBU';
   // const formText = 'Iscriviti al Camping';
-  const buttonText = 'Guarda gli articoli dove parlano di noi!';
+  const buttonText = "VAI ALL'EDIZIONE 2023";
   const isBrowser = typeof window !== 'undefined';
 
   const Gallery = lazy(() => import('../../atoms/gallery/gallery'));
@@ -28,10 +28,13 @@ const Hero = () => {
       <div className={styles.first}>
         <Logo />
         {/*timer ? <Timer shutOffTimer={() => setTimer(false)} /> : <></>*/}
-        {/*@ts-ignore*/}
-        <Link className={styles.link} to="/articoli">
-          {buttonText}
-        </Link>
+        <div className={styles.wrapNotHere}>
+          <p className={styles.notHere}>Questo sito è relativo a un'edizione passata dell'evento!</p>
+          <a href="https://nt.syskrack.org" className={styles.link} title="Vai a NT 2023">
+            {buttonText}
+          </a>
+        </div>
+
         <WhereWhen />
       </div>
 
