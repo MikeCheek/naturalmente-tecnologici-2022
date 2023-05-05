@@ -34,8 +34,8 @@
   z-index: 10;
   max-width: 60%;
   text-align: center;
-  color: #e98a15;
-  background: #025300;
+  color: #025300;
+  background: #e98a15;
   text-align: center;
 
   &:hover {
@@ -49,7 +49,7 @@
 .notHere {
   font-weight: bolder;
   font-size: 1.5rem;
-  color: #025300;
+  color: #e98a15;
   text-align: center;
   @media screen and (min-width: 768px) {
     font-size: 2rem;
@@ -58,7 +58,7 @@
 
 .wrapNotHere {
   border-radius: 10px;
-  background-color: #e98a15;
+  background-color: #025300;
   padding: 10px 20px;
   margin: 0 10%;
   display: flex;
@@ -67,7 +67,7 @@
   justify-content: center;
   gap: 10px;
   z-index: 5;
-  border: 4px solid #025300;
+  // border: 4px solid #e98a15;
   @media screen and (min-width: 768px) {
     padding: 20px 40px;
   }
