@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
-    title: `Naturalmente Tecnologici`,
+    title: `Naturalmente Tecnologici 2022`,
     siteUrl: 'https://nt22.syskrack.org',
     url: 'https://nt22.syskrack.org',
   },
