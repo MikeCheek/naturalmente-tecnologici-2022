@@ -9,7 +9,7 @@ const Articoli = ({ data }: { data: Data }) => {
   return (
     <>
       <SEO
-        title="Naturalmente Tecnologici"
+        title="Parlano di Naturalmente Tecnologici (2022)"
         description="L'evento si propone di essere occasione di ritrovo della community di Syskrack nonché strumento di disseminazione culturale sul territorio."
       />
       <Layout>
